@@ -1,9 +1,11 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Cadenas de Caracteres
+[[❮]](ch05-16-vectors.md)
+[[❯]](ch05-18-generics.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) >
+5.17 Cadenas de Caracteres
 
-## El Lenguaje de Programación Rust
-
-### 5.17. Cadenas de Caracteres
+# 5.17. Cadenas de Caracteres
 
 Las cadenas de caracteres son un concepto importante a dominar para cualquier
 programador. El sistema de manejo de cadenas de caracteres en Rust es un poco
@@ -181,6 +183,6 @@ característica es denominada ‘[coerciones `Deref`][dc]’.
 [dc]: deref-coercions.html
 [connect]: ../std/net/struct.TcpStream.html#method.connect
 
-[❮ anterior](ch05-16-vectors.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-18-generics.md)
+[❮ 5.16. Vectores](ch05-16-vectors.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.18. Genéricos ❯](ch05-18-generics.md)

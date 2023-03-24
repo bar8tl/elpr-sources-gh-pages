@@ -1,9 +1,10 @@
-[Indice general](_index.md) > [Primeros Pasos](ch02-00-getting-started.md) >
-¡Hola, mundo!
+[[❮]](ch02-01-installing-rust.md)
+[[❯]](ch02-03-hello-cargo.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[2. Primeros Pasos](ch02-00-getting-started.md) > 2.2. ¡Hola, mundo!
 
-## El Lenguaje de Programación Rust
-
-### ¡Hola, mundo!
+# 2.2. ¡Hola, mundo!
 
 Ahora que has instalado Rust, escribamos tu primer programa. Es tradición que tu
 primer programa en cualquier lenguaje sea uno que imprima el texto
@@ -178,6 +179,6 @@ para cosas simples, pero a medida que tu proyecto crece, necesitarás algo que t
 ayude a administrar todas las opciones que este tiene, así como hacer fácil
 compartir el codigo con otras personas y proyectos.
 
-[❮ anterior](ch02-01-installing-rust.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch02-03-hello-cargo.md)
+[❮ 2.1. Instalando Rust](ch02-01-installing-rust.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[2.3. ¡Hola, Cargo! ❯](ch02-03-hello-cargo.md)

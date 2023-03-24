@@ -1,9 +1,10 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > if let
+[[❮]](ch05-20-drop.md)
+[[❯]](ch05-22-trait-objects.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > 5.21. if let
 
-## El Lenguaje de Programación Rust
-
-### 5.21. if let
+# 5.21. if let
 
 `if let` te permite combinar `if` y `let` para reducir el costo de algunos tipos
 de coincidencia de patrones.
@@ -62,7 +63,7 @@ if let Some(x) = option {
 }
 ```
 
-### `while let`
+## `while let`
 
 De manera similar, `while let` puede ser usado cuando desees iterar
 condicionalmente mientras el valor concuerde con cierto patrón. Convierte código
@@ -89,6 +90,6 @@ while let Some(x) = option {
 
 [patterns]: patterns.html
 
-[❮ anterior](ch05-20-drop.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-22-trait-objects.md)
+[❮ 5.20. Drop](ch05-20-drop.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.22. Objetos Trait ❯](ch05-22-trait-objects.md)

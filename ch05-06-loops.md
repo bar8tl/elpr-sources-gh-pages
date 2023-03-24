@@ -1,14 +1,15 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Ciclos
+[[❮]](ch05-05-if.md)
+[[❯]](ch05-07-ownership.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > 5.6. Ciclos
 
-## El Lenguaje de Programación Rust
-
-### 5.6. Ciclos
+# 5.6. Ciclos
 
 Rust actualmente provee tres enfoques para realizar actividad iterativa. `loop`,
 `while` y `for`. Cada uno de dichos enfoques tiene sus propios usos.
 
-### loop
+## loop
 
 El ciclo infinito `loop` es el ciclo mas simple disponible en Rust. A traves del
 uso de la palabra reservada `loop`, Rust proporciona una forma de iterar
@@ -22,7 +23,7 @@ loop {
 }
 ```
 
-### while
+## while
 
 Rust también tiene un ciclo `while`. Luce de esta manera:
 
@@ -64,7 +65,7 @@ este podría desempeñarse mejor en relación a la seguridad y generación de
 código, es por ello que siempre deberías preferir `loop` cuando tengas planeado
 iterar de manera indefinida.
 
-### for
+## for
 
 El ciclo `for` es usado para iterar un numero particular de veces. Los ciclos
 `for` de Rust, sin embargo, trabajan de manera diferente a los de otros
@@ -109,12 +110,12 @@ Rut no posee el ciclo `for` al estilo de C, a proposito. Controlar manualmente
 cada elemento del ciclo es complicado y propenso a errores, incluso para
 programadores C experimentados.
 
-### Enumerate
+## Enumerate
 
 Cuando necesitas llevar registro de cuantas veces has iterado, puedes usar la
 función `.enumerate()`.
 
-#### En rangos:
+### En rangos:
 
 ```rust
 for (i,j) in (5..10).enumerate() {
@@ -134,7 +135,7 @@ i = 4 y j = 9
 
 No olvides colocar los paréntesis alrededor del rango.
 
-#### En iteradores:
+### En iteradores:
 
 ```rust
 # let lineas = "hola\nmundo".lines();
@@ -152,7 +153,7 @@ Salida:
 3: Contenido de la linea cuatro
 ```
 
-### Finalizando la iteración de manera temprana
+## Finalizando la iteración de manera temprana
 
 Echemos un vistazo a ese ciclo `while` que vimos con anterioridad:
 
@@ -205,7 +206,7 @@ for x in 0..10 {
 }
 ```
 
-### Etiquetas loop
+## Etiquetas loop
 
 También podrías encontrar situaciones en las cuales tengas ciclos anidados y
 necesites especificar a cual de los ciclos pertenecen tus sentencias `break` o
@@ -226,6 +227,6 @@ siguiente solo imprimirá cuando ambos `x` y `y` sean impares:
 }
 ```
 
-[❮ anterior](ch05-05-if.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-07-ownership.md)
+[❮ 5.5. if](ch05-05-if.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.7. Pertenencia ❯](ch05-07-ownership.md)

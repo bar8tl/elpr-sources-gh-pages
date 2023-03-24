@@ -1,9 +1,10 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Alias `type`
+[❮ anterior](ch05-27-attributes.md)
+[siguiente ❯](ch05-29-casting-between-types.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > 5.28. Alias `type`
 
-## El Lenguaje de Programación Rust
-
-### 5.28. Alias `type`
+# 5.28. Alias `type`
 
 La palabra reservada `type` te permite declarar un alias a otro tipo:
 
@@ -81,6 +82,6 @@ errores personalizados para cada sub-seccion. Por ejemplo,
 
 [ioresult]: ../std/io/type.Result.html
 
-[❮ anterior](ch05-27-attributes.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-29-casting-between-types.md)
+[❮ 5.27. Atributos](ch05-27-attributes.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.29. Conversión entre Tipos ❯](ch05-29-casting-between-types.md)

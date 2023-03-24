@@ -1,9 +1,10 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Funciones
+[[❮]](ch05-01-variable-bindings.md)
+&nbsp;&nbsp;
+[[❯]](ch05-03-primitive-types.md)
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > 5.2. Funciones
 
-## El Lenguaje de Programación Rust
-
-### 5.2. Funciones
+# 5.2. Funciones
 
 Todo programa Rust posee al menos una función, la función `main`:
 
@@ -122,7 +123,7 @@ Lo anterior revela dos cosas interesantes acerca de Rust: es un lenguaje basado
 en expresiones, y los puntos y coma son diferentes a los de otros lenguajes
 basados en ‘llaves y puntos y coma’. Estas dos cosas están relacionadas.
 
-### Expresiones vs. Sentencias
+## Expresiones vs. Sentencias
 
 Rust en un lenguaje principalmente basado en expresiones. Existen solo dos tipos
 de sentencias, todo lo demás es una expresión.
@@ -186,7 +187,7 @@ Nuestra función clama retornar un `i32`, pero con un punto y coma, retornaría
 `()`. Rust determina que esto no es probablemente lo que queremos, y sugiere la
 remoción del punto y coma en el error que vimos anteriormente.
 
-### Retornos tempranos
+## Retornos tempranos
 
 Pero que hay acerca de los retornos tempranos? Rust proporciona una palabra
 reservada para ello, `return`:
@@ -213,7 +214,7 @@ La definición previa sin el `return` puede lucir un poco extraña si nunca has
 trabajado con un lenguaje basado en expresiones, pero esta se vuelve intuitiva
 con el tiempo.
 
-### Funciones divergentes
+## Funciones divergentes
 
 Rust tiene una sintaxis especial para las ‘funciones divergentes’, que son
 funciones que no retornan:
@@ -240,7 +241,7 @@ let x: i32 = diverge();
 let x: String = diverge();
 ```
 
-### Apuntadores a función
+## Apuntadores a función
 
 También podemos crear enlaces a variables que apunten a funciones:
 
@@ -271,6 +272,6 @@ Podemos entonces hacer uso de `f` para llamar a la función:
 let seis = f(5);
 ```
 
-[❮ anterior](ch05-01-variable-bindings.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-03-primitive-types.md)
+[❮ 5.1. Enlaces a Variables](ch05-01-variable-bindings.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.3. Tipos Primitivos ❯](ch05-03-primitive-types.md)

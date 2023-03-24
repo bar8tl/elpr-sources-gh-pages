@@ -1,9 +1,10 @@
-[Indice general](_index.md) > [Rust Nocturno](ch06-00-nightly-rust.md) > 
-Ensamblador en linea
+[[❮]](ch06-01-compiler-plugins.md)
+[[❯]](ch06-03-no-stdlib.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[6. Rust Nocturno](ch06-00-nightly-rust.md) > 6.2. Ensamblador en linea
 
-## El Lenguaje de Programación Rust
-
-### 6.2. Ensamblador en linea
+# 6.2. Ensamblador en linea
 
 Para manipulaciones de muy bajo nivel y por razones de desempeño, uno podría
 desear controlar la CPU de manera directa. Para esto Rust soporta el uso de
@@ -185,6 +186,6 @@ de clobbers, restricciones, etc.
 
 [llvm-docs]: http://llvm.org/docs/LangRef.html#inline-assembler-expressions
 
-[❮ anterior](ch06-01-compiler-plugins.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch06-03-no-stdlib.md)
+[❮ 6.1. Plugins del Compilador](ch06-01-compiler-plugins.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[6.3. No stdlib ❯](ch06-03-no-stdlib.md)

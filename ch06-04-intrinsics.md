@@ -1,9 +1,10 @@
-[Indice general](_index.md) > [Rust Nocturno](ch06-00-nightly-rust.md) >
-Intrínsecos
+[[❮]](ch06-03-no-stdlib.md)
+[[❯]](ch06-05-lang-items.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[6. Rust Nocturno](ch06-00-nightly-rust.md) > 6.4. Intrínsecos
 
-## El Lenguaje de Programación Rust
-
-### 6.4. Intrínsecos
+# 6.4. Intrínsecos
 
 > **Nota**: los intrínsecos por siempre tendrán una interfaz inestable, se
 > recomienda usar las interfaces estables de libcore en lugar de intrínsecos
@@ -27,6 +28,6 @@ extern "rust-intrinsic" {
 
 Al igual que cualquier otra función FFI, estas son siempre `unsafe` de llamar.
 
-[❮ anterior](ch06-03-no-stdlib.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch06-05-lang-items.md)
+[❮ 6.3. No stdlib](ch06-03-no-stdlib.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[6.5. Items de Lenguaje ❯](ch06-05-lang-items.md)

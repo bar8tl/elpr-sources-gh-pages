@@ -1,9 +1,10 @@
-[Indice general](_index.md) > [Rust Efectivo](ch04-00-effective-rust.md) >
-Manejo de Errores
+[[❮]](ch04-06-concurrency.md)
+[[❯]](ch04-08-ffi.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[4. Rust Efectivo](ch04-00-effective-rust.md) > 4.7. Manejo de Errores
 
-## El Lenguaje de Programación Rust
-
-### 4.7. Manejo de Errores
+# 4.7. Manejo de Errores
 
 > Los planes mejor establecidos por ratones y hombres a menudo se tuercen.
 > "Tae a Moose", Robert Burns
@@ -16,7 +17,7 @@ Existen dos tipos de errores que pueden ocurrir en tus programas: fallas y
 pánicos. Hablaremos de las diferencias entre los dos, y luego discutiremos como
 manejar cada uno. Después discutiremos como promover fallas a pánicos.
 
-### Falla vs. Pánico
+## Falla vs. Pánico
 
 Rust usa dos términos para diferenciar entre las dos formas de error: falla, y
 pánico. Una *falla* es un error del cual nos podemos recuperar de alguna manera.
@@ -125,7 +126,7 @@ Nunca deberíamos alcanzar el caso `_`, debido a esto hacemos uso de la macro
 para indicarlo. `unreachable!()` produce un tipo diferente de error que
 `Result`. Rust llama a ese tipo de errores *pánicos*.
 
-### Manejando errores con `Option` y `Result`
+## Manejando errores con `Option` y `Result`
 
 La manera mas simple de indicar que una función puede fallar es usando el tipo
 `Option<T>`. Por ejemplo, el método find en las cadenas de caracteres intenta
@@ -194,7 +195,7 @@ pueden ocurrir.
 El trait [`Debug`](../std/fmt/trait.Debug.html) es el que nos permite imprimir
 el valor del enum usando la operación de formato `{:?}`.
 
-### Errores no recuperables con `panic!`
+## Errores no recuperables con `panic!`
 
 En el caso de un error inesperado del cual no se pueda recuperar, la macro
 `panic!` se utiliza para inducir un pánico. Dicho pánico terminara abruptamente
@@ -215,7 +216,7 @@ cuando lo ejecutas.
 Debido a que estas situaciones son relativamente raras, usa los pánicos con
 moderación.
 
-### Promoviendo fallas a pánicos
+## Promoviendo fallas a pánicos
 
 En ciertas circunstancias, aun sabiendo que una función puede fallar, podríamos
 querer tratar la falla como un pánico. Por ejemplo, `io::stdin().read_line(&mut
@@ -250,7 +251,7 @@ let bytes_leidos = io::stdin().read_line(&mut bufer)
 `panic!` subyacente, proporcionando un mejor mensaje de error.
 
 
-# Usando `try!`
+## Usando `try!`
 
 Cuando escribimos código que llama a muchas funciones que retornan el tipo
 `Result`, el manejo de errores se puede tornar tedioso. La macro `try!` esconde
@@ -322,6 +323,6 @@ dentro de `main()`, debido a que `main()` no retorna nada.
 `try!` hace uso de [`From<Error>`](../std/convert/trait.From.html) (ingles) para
 determinar que retornar en el caso de error.
 
-[❮ anterior](ch04-06-concurrency.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch04-08-ffi.md)
+[❮ 4.6. Concurrencia](ch04-06-concurrency.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[4.8 FFI ❯](ch04-08-ffi.md)

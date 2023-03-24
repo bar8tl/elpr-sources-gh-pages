@@ -1,9 +1,11 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Estructuras (Structs)
+[[❮]](ch05-10-mutability.md)
+[[❯]](ch05-12-enums.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) >
+5.11. Estructuras (Structs)
 
-## El Lenguaje de Programación Rust
-
-### 5.11. Estructuras (Structs)
+# 5.11. Estructuras (Structs)
 
 Las estructuras (`struct`s) son una forma de crear tipos de datos mas complejos.
 Por ejemplo, si estuviéramos haciendo cálculos que involucraran coordenadas en
@@ -95,7 +97,7 @@ cambiado
 }
 ```
 
-### Sintaxis de actualización
+## Sintaxis de actualización
 
 Una `struct` puede incluir `..` para indicar que deseas usar una copia de algún
 otro `struct` para algunos de los valores. Por ejemplo:
@@ -126,7 +128,7 @@ let origen = Punto3d { x: 0, y: 0, z: 0 };
 let punto = Punto3d { z: 1, x: 2, .. origen };
 ```
 
-### Tupla estructuras (Tuple structs)
+## Tupla estructuras (Tuple structs)
 
 Rust posee otro tipo de datos que es como un híbrido entre una [tupla][tuple] y
 una `struct`, llamado `tulla estructura` (`tuple struct`). Las tupla estructuras
@@ -186,7 +188,7 @@ Como notaras, puedes extraer el entero contenido con un `let` de
 destructuración, justo como en las tuplas regulares. En este caso, el
 `let Pulgadas(longitud_enteros)` asigna `10` a `longitud_enteros`.
 
-### Estructuras tipo-unitario (unit-like structs)
+## Estructuras tipo-unitario (unit-like structs)
 
 Puedes definir una `struct` sin ningún miembro:
 
@@ -207,6 +209,6 @@ tipo-unitario.
 
 [trait]: traits.html
 
-[❮ anterior](ch05-10-mutability.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-12-enums.md)
+[❮ 5.10. Mutabilidad](ch05-10-mutability.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.12. Enumeraciones ❯](ch05-12-enums.md)

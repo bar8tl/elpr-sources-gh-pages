@@ -1,8 +1,9 @@
-[Indice general](_index.md) > Rust Nocturno
+[[❮]](ch05-36-unsafe.md)
+[[❯]](ch06-01-compiler-plugins.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) > 6. Rust Nocturno
 
-## El Lenguaje de Programación Rust
-
-### Rust Nocturno
+# 6. Rust Nocturno
 
 Rust proporciona tres canales de distribución: nocturno (nightly), beta y
 estable (stable). Las facilidades inestables están solo disponibles en Rust
@@ -35,7 +36,7 @@ Si estas en Windows, por favor descarga bien sea el
 [win32]: https://static.rust-lang.org/dist/rust-nightly-i686-pc-windows-gnu.msi
 [win64]: https://static.rust-lang.org/dist/rust-nightly-x86_64-pc-windows-gnu.msi
 
-**[Desinstalando
+**[Desinstalando**
 
 Si has decidido que ya no quieres mas a Rust, estaremos un poco triste, pero
 esta bien. No todos los lenguajes de programación son para todo el mundo.
@@ -121,6 +122,6 @@ buenos recursos incluyen [el foro de usuarios][users], y
 - 6.10. [Constantes Asociadas](ch06-10-associated-constants.md)
 - 6.11. [Asignadores de Memoria Personalizados](ch06-11-custom-allocators.md)
 
-[❮ anterior](ch05-36-unsafe.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch06-01-compiler-plugins.md)
+[❮ 5.36. `unsafe`](ch05-36-unsafe.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[6.1. Plugins del Compilador ❯](ch06-01-compiler-plugins.md)

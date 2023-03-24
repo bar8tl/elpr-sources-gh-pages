@@ -1,10 +1,11 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Operadores y
-Sobrecarga
+[[❮]](ch05-31-unsized-types.md)
+[[❯]](ch05-33-deref-coercions.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) >
+5.32. Operadores y Sobrecarga
 
-## El Lenguaje de Programación Rust
-
-### 5.32. Operadores y Sobrecarga
+# 5.32. Operadores y Sobrecarga
 
 Rust permite una forma limitada de sobrecarga de operadores. Existen ciertos
 operadores que pueden ser sobrecargados. Para soportar un operador particular
@@ -89,7 +90,7 @@ let p: Point = // ...
 let x: f64 = p + 2i32;
 ```
 
-### Usando los traits de operador en estructuras genericas
+## Usando los traits de operador en estructuras genericas
 
 Ahora que sabemos como están definidos los traits de operador, podemos definir
 nuestro trait `TieneArea` y nuestra estructura `Cuadrado` del
@@ -143,6 +144,6 @@ números no cambian de tipo cuando son multiplicados, también lo definimos como
 `T`. `T` también debe soportar copiado, de manera que Rust no trate de mover
 `self.lado` a el valor de retorno.
 
-[❮ anterior](ch05-31-unsized-types.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-33-deref-coercions.md)
+[❮ 5.31. Tipos sin Tamaño](ch05-31-unsized-types.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.33. Coerciones Deref ❯](ch05-33-deref-coercions.md)

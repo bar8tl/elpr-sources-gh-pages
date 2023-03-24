@@ -1,9 +1,10 @@
-[Indice general](_index.md) > [Aprende Rust](ch03-00-learn-rust.md) >
-Juego de Adivinanzas
+[[❮]](ch03-00-learn-rust.md)
+[[❯]](ch03-02-dining-philosophers.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[3. Aprende Rust](ch03-00-learn-rust.md) > 3.1. Juego de Adivinanzas
 
-## El Lenguaje de Programación Rust
-
-### 3.1. Juego de Adivinanzas
+# 3.1. Juego de Adivinanzas
 
 Para nuestro primer proyecto, implementaremos un problema clásico de
 programación para principiantes: un juego de adivinanzas. ¿Cómo funciona el
@@ -12,7 +13,7 @@ Nos pedirá que introduzcamos una corazonada. Después de haber proporcionado
 nuestro número, éste nos dirá si estuvimos muy por debajo y muy por encima. Una
 vez que adivinemos el número correcto, nos felicitará. ¿Suena bien?
 
-### Configuración Inicial
+## Configuración Inicial
 
 Creemos un nuevo proyecto. Anda a tu directorio de proyectos. ¿Recuerdas cómo
 creamos nuestra estructura de directorios y un `Cargo.toml` para `hola_mundo`?
@@ -73,7 +74,7 @@ Hola, mundo!
 proyecto. Nuestro juego es uno de esos proyectos, necesitaremos probar
 rapidamente cada iteración antes de movernos a la siguiente.
 
-### Procesando un Intento de Adivinanza
+## Procesando un Intento de Adivinanza
 
 ¡Probemoslo! La primera cosa que necesitamos hacer para nuestro juego de
 adivinanzas es permitir a nuestro jugador ingresar un intento de adivinanza.
@@ -551,9 +552,9 @@ Por favor introduce tu corazonada:
 Tu corazonada fue: 5
 ```
 
-¡Gradioso! A continuación: comparemos nuestra adivinanza con el número secreto.
+¡Grandioso! A continuación: comparemos nuestra adivinanza con el número secreto.
 
-### Comparando adivinanzas
+## Comparando adivinanzas
 
 Ahora que tenemos entrada del usuario, comparemos la adivinanza con nuestro
 número secreto. He aquí nuestro siguiente paso, aunque todavia no funciona
@@ -784,7 +785,7 @@ muy pequeño.
 Ahora tenemos la mayoria del juego funcionando, pero sólo podemos intentar
 adivinar una vez. ¡Tratemos de cambiar eso agregando ciclos!
 
-### Iteración
+## Iteración
 
 La palabra clave `loop` nos proporciona un ciclo infinito. Agreguémosla:
 
@@ -1044,7 +1045,7 @@ fn main() {
 }
 ```
 
-### ¡Completado!
+## ¡Completado!
 
 En éste punto has terminado satisfactoriamente el juego de las adivinanza,
 ¡Felicitaciones!
@@ -1053,6 +1054,6 @@ En éste punto has terminado satisfactoriamente el juego de las adivinanza,
 asociadas, usar crates externos y más. Nuestro siguiente proyecto demostrara aún
 más.
 
-[❮ anterior](ch03-00-learn-rust.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch03-02-dining-philosophers.md)
+[❮ 3. Aprende Rust](ch03-00-learn-rust.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[3.2. La Cena de los Filósofos ❯](ch03-02-dining-philosophers.md)

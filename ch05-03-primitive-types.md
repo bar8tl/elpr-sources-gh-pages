@@ -1,16 +1,18 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Tipos Primitivos
+[[❮]](ch05-02-functions.md)
+[[❯]](ch05-04-comments.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) >
+5.3. Tipos Primitivos
 
-## El Lenguaje de Programación Rust
-
-### 5.2. Tipos Primitivos
+# 5.2. Tipos Primitivos
 
 Rust posee un conjunto de tipos que son considerados ‘primitivos’. Esto
 significa que están integrados en el lenguaje. Rust esta estructurado de tal
 manera que la biblioteca estándar también provee una numero de tipos útiles
 basados en los primitivos, pero estos son los mas primitivos.
 
-### Booleanos
+## Booleanos
 
 Rust posee un tipo booleano integrado, denominado `bool`. Tiene dos posibles
 valores  `true` y `false`:
@@ -30,7 +32,7 @@ Puedes encontrar mas documentación para los `bool`eanos
 
 [bool]: ../std/primitive.bool.html
 
-### `char`
+## `char`
 
 El tipo `char` representa un unico valor escalar Unicode. Puedes crear `char`s
 con comillas simples: (`'`)
@@ -48,7 +50,7 @@ biblioteca estándar][char] (ingles).
 
 [char]: ../std/primitive.char.html
 
-### Tipos numéricos
+## Tipos numéricos
 
 Rust posee una variedad de tipos numéricos en unas pocas categorías: con signo y
 sin signo, fijos y variables, de punto flotante y enteros.
@@ -84,7 +86,7 @@ documentación en la biblioteca estándar (ingles):
 
 Veamos cada una de las diferentes categorías.
 
-### Con signo y sin signo
+## Con signo y sin signo
 
 Los tipos de enteros vienen en dos variedades: con signo y sin signo. Para
 entender la diferencia, consideremos un numero con cuatro bits de tamaño. Un
@@ -97,26 +99,26 @@ Los tipos sin signo usan una `u` para su categoria, y los tipos con signo usan
 `i`. La `i` es de `integer` (entero). Entonces, `u8` es un numero de ocho bits
 sin signo, y un `i8` es un numero de ocho bits con signo.
 
-### Tipos de tamaño fijo
+## Tipos de tamaño fijo
 
 Los tipos de tamaño fijo poseen un numero especifico de bits en su
 representación. Los tamaños validos son `8`, `16`, `32`, and `64`. Entonces
 `u32` es un entero sin signo de 32 bits, e `i64` es un entero con signo de 64
 bits.
 
-### Tipos de tamaño variable
+## Tipos de tamaño variable
 
 Rust también provee tipos para los cuales el tamaño depende del tamaño del
 apuntador en la maquina subyacente. Dichos tipos poseen la categoría ‘size’, y
 vienen en variantes con y sin signo. Esto resulta en dos tipos `isize` y
 `usize`.
 
-### Tipos de punto flotante
+## Tipos de punto flotante
 
 Rust también posee dos tipos de punto flotante: `f32` y `f64`. Estos
 corresponden a los números IEEE-754 de simple y doble precision.
 
-### Arreglos
+## Arreglos
 
 Como muchos lenguajes de programación, Rust posee tipos lista para representar
 una secuencia de cosas. El mas básico es el *arreglo*, una lista de elementos
@@ -168,7 +170,7 @@ biblioteca estándar][array] (ingles).
 
 [array]: ../std/primitive.array.html
 
-### Slices
+## Slices
 
 Un slice es una referencia a (o una “vista” dentro de) otra estructura de datos.
 Los slices son útiles para permitir acceso seguro y eficiente a una porción de
@@ -194,7 +196,7 @@ biblioteca estándar][slice] (ingles)
 
 [slice]: ../std/primitive.slice.html
 
-### `str`
+## `str`
 
 El `str` de Rust es el tipo de cadena de caracteres mas primitivo. Como un
 [tipo sin tamaño][dst], y no es muy util en si mismo, pero se vuelve muy util
@@ -209,7 +211,7 @@ Puedes encontrar mas documentación para str
 
 [str]: ../std/primitive.str.html
 
-### Tuplas
+## Tuplas
 
 Una tupla es una lista ordenada de tamaño fijo. Como esto:
 
@@ -272,7 +274,7 @@ encerrado en paréntesis usando una coma:
 (0); // cero encerrado en parentesis
 ```
 
-### Indexado en tuplas
+## Indexado en tuplas
 
 Puedes también acceder los campos de una tupla con la sintaxis de indexado:
 
@@ -295,7 +297,7 @@ Puedes encontrar mas documentación para tuplas
 [str]: ../std/primitive.str.html
 [tuple]: ../std/primitive.tuple.html
 
-### Funciones
+## Funciones
 
 Las funciones también tienen un tipo! Estas lucen así:
 
@@ -308,6 +310,6 @@ let x: fn(i32) -> i32 = foo;
 En este caso, `x` es un ‘apuntador’ a una función que recibe un `i32` y retorna
 un `i32`.
 
-[❮ anterior](ch05-02-functions.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-04-comments.md)
+[❮ 5.2. Funciones](ch05-02-functions.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.4. Comentarios ❯](ch05-04-comments.md)

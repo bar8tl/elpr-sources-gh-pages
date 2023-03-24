@@ -1,9 +1,10 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Drop
+[[❮]](ch05-19-traits.md)
+[[❯]](ch05-21-if-let.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > 5.20. Drop
 
-## El Lenguaje de Programación Rust
-
-### 5.20. Drop
+# 5.20. Drop
 
 Ahora que hemos discutido los traits, hablemos de un trait particular
 proporcionado por la biblioteca estándar de Rust, [`Drop`][drop]. El trait
@@ -72,6 +73,6 @@ el valor subyacente.
 
 [arc]: ../std/sync/struct.Arc.html
 
-[❮ anterior](ch05-19-traits.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-21-if-let.md)
+[❮ 5.19. Traits](ch05-19-traits.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.21. if let ❯](ch05-21-if-let.md)

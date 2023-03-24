@@ -1,9 +1,10 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Vectores
+[[❮]](ch05-15-method-syntax.md)
+[[❯]](ch05-17-strings.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > 5.16. Vectores
 
-## El Lenguaje de Programación Rust
-
-### 5.16. Vectores
+# 5.16. Vectores
 
 Un ‘vector’ es un arreglo dinámico, implementado como el tipo de la biblioteca
 estándar [`Vec<T>`][vec]. La `T` significa que podemos tener vectores de
@@ -64,6 +65,6 @@ leer en su [documentation][vec]
 [vec]: ../std/vec/index.html
 [generic]: generics.html
 
-[❮ anterior](ch05-15-method-syntax.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-17-strings.md)
+[❮ 5.15 Sintaxis de Métodos](ch05-15-method-syntax.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.17. Cadenas de Caracteres ❯](ch05-17-strings.md)

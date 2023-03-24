@@ -1,9 +1,10 @@
-[Indice general](_index.md) > [Primeros Pasos](ch02-00-getting-started.md) >
-¡Hola, Cargo!
+[[❮]](ch02-02-hello-world.md)
+[[❯]](ch03-00-learn-rust.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[2. Primeros Pasos](ch02-00-getting-started.md) > 2.3. ¡Hola, Cargo!
 
-## El Lenguaje de Programación Rust
-
-### ¡Hola, Cargo!
+# 2.3. ¡Hola, Cargo!
 
 [Cargo][cratesio] es una herramienta que los Rusteros usan como ayuda para
 administrar sus proyectos Rust. Cargo esta actualmente en estado pre-1.0, y
@@ -27,7 +28,7 @@ de cómo instalarlo.
 
 [cargoreadme]: https://github.com/rust-lang/cargo#installing-cargo-from-nightlies
 
-### Migrando a Cargo
+## Migrando a Cargo
 
 Convirtamos Hola Mundo a Cargo.
 
@@ -149,7 +150,7 @@ $ cd foo
 $ cargo build
 ```
 
-### Un Proyecto Nuevo
+## Un Proyecto Nuevo
 
 ¡No tienes que pasar por todo ese proceso completo cada vez que quieras comenzar
 un proyecto nuevo! Cargo posee la habilidad de crear un directorio plantilla en
@@ -223,6 +224,6 @@ diferente! Escoje lo que funcione mejor para ti.
 [learnrust]: learn-rust.html
 [syntax]: syntax-and-semantics.html
 
-[❮ anterior](ch02-02-hello-world.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch03-00-learn-rust.md)
+[❮ 2.2. ¡Hola, mundo!](ch02-02-hello-world.md)&nbsp;|&nbsp;
+[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[3. Aprende Rust ❯](ch03-00-learn-rust.md)

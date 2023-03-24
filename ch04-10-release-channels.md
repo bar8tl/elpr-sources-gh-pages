@@ -1,9 +1,10 @@
-[Indice general](_index.md) > [Rust Efectivo](ch04-00-effective-rust.md) >
-Canales de Distribución
+[[❮]](ch04-09-borrow-and-asref.md)
+[[❯]](ch05-00-syntax-and-semantics.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[4. Rust Efectivo](ch04-00-effective-rust.md) > 4.10. Canales de Distribución
 
-## El Lenguaje de Programación Rust
-
-### 4.10. Canales de Distribución
+# 4.10. Canales de Distribución
 
 El proyecto Rust usa un concepto denominado ‘canales de distribución’ para
 administrar los releases.
@@ -11,7 +12,7 @@ administrar los releases.
 Es importante entender este proceso para así poder decidir cual version de Rust
 debe usar tu proyecto.
 
-### Visión general
+## Visión general
 
 Hay tres canales para los releases de Rust:
 
@@ -29,7 +30,7 @@ sube a beta, el beta es promovido a estable. Cuando `1.x` es liberado, al mismo
 tiempo, `1.(x + 1)-beta` es liberado, y el nocturno se vuelve la primera version
 de `1.(x + 2)-nightly`.
 
-### Escogiendo una versión
+## Escogiendo una versión
 
 Generalmente hablando, a menos que tengas una razón especifica, deberías usar el
 canal de distribución estable. Esos releases tienen como objetivo una audiencia
@@ -43,7 +44,7 @@ romper tu código. Si usas el release estable, no tienes acceso a característic
 experimentales, pero el siguiente release de Rust no causara problemas
 significativos a causa de cambios.
 
-### Ayudando a el ecosistema a traves de CI
+## Ayudando a el ecosistema a traves de CI
 
 Que hay acerca de beta? Nosotros recomendamos a todos los usuarios Rust que usan
 el canal de distribución estable a que también prueben en sus sistemas de
@@ -54,6 +55,6 @@ Adicionalmente, probar contra el nocturno puede detectar regresiones mucho mas
 temprano, es por ello que si no te importa tener un tercer build, apreciamos que
 pruebes contra todos los canales.
 
-[❮ anterior](ch04-09-borrow-and-asref.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-00-syntax-and-semantics.md)
+[❮ 4.9. Borrow y AsRef](ch04-08-ffi.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5. Sintaxis y Semantica ❯](ch05-00-syntax-and-semantics.md)

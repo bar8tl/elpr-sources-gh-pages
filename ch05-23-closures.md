@@ -1,9 +1,10 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Closures
+[[❮]](ch05-22-trait-objects.md)
+[[❯]](ch05-24-ufcs.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > 5.23. Closures
 
-## El Lenguaje de Programación Rust
-
-### 5.23. Closures
+# 5.23. Closures
 
 Algunas veces es util envolver una función y sus _variables libres_ para mejor
 claridad y reusabilidad. Las variables libres que pueden ser usadas provienen
@@ -11,7 +12,7 @@ del ámbito exterior y son ‘cerradas’ (‘closed over’) cuando son usadas 
 función. De allí el nombre ‘closure’. Rust provee una muy buena implementación,
 como veremos a continuación.
 
-### Sintaxis
+## Sintaxis
 
 Los closures lucen así:
 
@@ -67,7 +68,7 @@ let suma_uno_v3 = |x: i32|          x + 1  ;
 
 Pequenas diferencias, pero son similares.
 
-### Closures y su entorno
+## Closures y su entorno
 
 El entorno para un closure puede incluir enlaces a variable del ámbito que los
 envuelve en adición a los parámetros y variables locales. De esta manera:
@@ -149,7 +150,7 @@ referencia a el dentro de nuestro closure, tenemos que tomar pertenencia de
 `nums`. Es lo mismo que si hubiéramos proporcionado `nums` como argumento a una
 función que tomara pertenencia sobre el.
 
-### Closures `move`
+## Closures `move`
 
 Podemos forzar nuestro closure a tomar pertenecia de su entorno con la palabra
 reservada `move`:
@@ -211,7 +212,7 @@ de retorno, debemos hablar un poco mas acerca de su implementación. Como un
 lenguaje de programación de sistemas Rust te proporciona una tonelada de control
 acerca de lo que tu código hace, y los closures no son diferentes.
 
-### Implementación de los Closures
+## Implementación de los Closures
 
 La implementación de closures de Rust es un poco diferente a la de otros
 lenguajes. En Rust, los closures son efectivamente una sintaxis alterna para los
@@ -259,7 +260,7 @@ La sintaxis `|| {}` es una sintaxis alterna para esos tres traits. Rust generara
 un `struct` para el entorno, `impl` el trait apropiado, y luego hará uso de
 este.
 
-### Recibiendo closures como argumentos
+## Recibiendo closures como argumentos
 
 Ahora que sabemos que los closures son traits, entonces sabemos como aceptar y
 retornar closures: justo como cualquier otro trait!
@@ -330,7 +331,7 @@ Ahora recibimos un objeto trait, un `&Fn`. Y tenemos que hacer una referencia a
 nuestro closure cuando lo pasemos a `llamar_con_uno`, es por ello que usamos
 `&||`.
 
-### Apuntadores a función y closures
+## Apuntadores a función y closures
 
 Un apuntador a función es una especie de closure que no posee entorno. Como
 consecuencia, podemos pasar un apuntador a función a cualquier función que
@@ -359,7 +360,7 @@ estricta, el nombre de la función también sirve:
 let respuesta = llamar_con_uno(&suma_uno);
 ```
 
-### Retornando closures
+## Retornando closures
 
 Es muy común para código con estilo funcional el retornar closures en diversas
 situaciones. Si intentas retornar un closure, podrías incurrir en un error. Al
@@ -518,6 +519,6 @@ activación para nuestro closure. Envolviéndolo con un `Box`, le hemos
 proporcionado un tamaño conocido, permitiéndole escapar nuestro registro de
 activación.
 
-[❮ anterior](ch05-22-trait-objects.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-24-ufcs.md)
+[❮ 5.22. Objetos Trait](ch05-22-trait-objects.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.24. Sintaxis Universal  de Llamada a Funciones ❯](ch05-24-ufcs.md)

@@ -1,9 +1,10 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Objetos Trait
+[[❮]](ch05-21-if-let.md)
+[[❯]](ch05-23-closures.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > 5.22. Objetos Trait
 
-## El Lenguaje de Programación Rust
-
-### 5.22. Objetos Trait
+# 5.22. Objetos Trait
 
 Cuando el código involucra polimorfismo, es necesario un mecanismo para
 determinar que versión especifica debe ser ejecutada. Dicho mecanismo es
@@ -12,7 +13,7 @@ despacho dinámico. Si bien es cierto que Rust prefiere el despacho estático,
 también soporta despacho dinámico a través de un mecanismo llamado ‘objetos
 trait’.
 
-### Bases
+## Bases
 
 Por el resto de este capitulo, necesitaremos un trait y algunas
 implementaciones. Creemos uno simple, `Foo`. `Foo` posee un solo método que
@@ -37,7 +38,7 @@ impl Foo for String {
 }
 ```
 
-### Despacho estático
+## Despacho estático
 
 Podemos usar el trait para efectuar despacho estático mediante el uso de limites
 de trait:
@@ -105,7 +106,7 @@ efectuando despacho dinámico, pero no vice versa, es decir; las llamadas
 estáticas son mas flexibles. Es por esto que la biblioteca estándar intenta ser
 despachada dinámicamente siempre y cuando sea posible.
 
-### Despacho dinámico
+## Despacho dinámico
 
 Rust proporciona despacho dinámico a través de una facilidad denominada ‘objetos
 trait’. Los objetos trait, como `&Foo` o `Box<Foo>`, son valores normales que
@@ -166,7 +167,7 @@ dinámico viene con el costo de requerir las llamadas mas lentas a funciones
 virtuales, efectivamente inhibiendo cualquier posibilidad de inserción en linea
 y las optimizaciones relacionadas.
 
-### Porque apuntadores?
+## Porque apuntadores?
 
 Rust, a diferencia de muchos lenguajes administrados, no coloca cosas detrás de
 apuntadores por defecto, lo que se traduce en que los tipos tengan diferentes
@@ -185,7 +186,7 @@ Colocar el valor detrás de un apuntador significa que el tamaño del valor no e
 relevante cuando estemos lanzando un objeto trait por los alrededores, solo el
 tamaño del apuntador en si mismo.
 
-### Representación
+## Representación
 
 Los métodos del trait pueden ser llamados en un objeto trait a través de un
 registro de apuntadores a función tradicionalmente llamado ‘vtable’ (creado y
@@ -313,7 +314,7 @@ let y = TraitObject {
 (y.vtable.metodo)(y.data);
 ```
 
-### Seguridad de Objetos
+## Seguridad de Objetos
 
 No todo trait puede ser usado para crear un objeto trait. Por ejemplo, los
 vectores implementan `Clone`, pero si intentamos crear un objeto trait:
@@ -351,6 +352,6 @@ Uff! Como podemos ver, casi todas estas reglas hablan acerca de `Self`. Una
 buena intuición seria “exceptuando circunstancias especiales, si tu metodo de
 trait usa `Self`, no es seguro para objetos.”
 
-[❮ anterior](ch05-21-if-let.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-23-closures.md)
+[❮ 5.21. if let](ch05-21-if-let.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.23. Closures ❯](ch05-23-closures.md)

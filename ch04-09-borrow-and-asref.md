@@ -1,9 +1,10 @@
-[Indice general](_index.md) > [Rust Efectivo](ch04-00-effective-rust.md) >
-Borrow y AsRef
+[[❮]](ch04-08-ffi.md)
+[[❯]](ch04-10-release-channels.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[4. Rust Efectivo](ch04-00-effective-rust.md) > 4.9. Borrow y AsRef
 
-## El Lenguaje de Programación Rust
-
-### 4.9. Borrow y AsRef
+# 4.9. Borrow y AsRef
 
 Los traits [`Borrow`][borrow] y [`AsRef`][asref] son muy similares, pero
 diferentes. He aquí un breve repaso acerca de lo que significan dichos traits:
@@ -11,7 +12,7 @@ diferentes. He aquí un breve repaso acerca de lo que significan dichos traits:
 [borrow]: ../std/borrow/trait.Borrow.html (ingles)
 [asref]: ../std/convert/trait.AsRef.html (ingles)
 
-### Borrow
+## Borrow
 
 El trait `Borrow` se usa cuando estamos escribiendo un estructura de datos, y
 deseamos usar un tipo owned o un tipo borrowed como sinónimo por alguna razón.
@@ -73,7 +74,7 @@ foo(&mut i);
 
 This will print out `a es un borrowed: 5` dos veces.
 
-### AsRef
+## AsRef
 
 El trait `AsRef` es un trait de conversion. Es usado para convertir algún valor
 a una referencia en código generico. Como esto:
@@ -86,7 +87,7 @@ fn foo<T: AsRef<str>>(s: T) {
 }
 ```
 
-### Cual debería usar?
+## Cual debería usar?
 
 Podemos ver como ambos son una especie de lo mismo: ambos lidian con las
 versiones owned y borrowed de algún tipo. Sin embargo, son diferentes.
@@ -99,6 +100,6 @@ comparación.
 Usa `AsRef` cuando desees convertir algo directamente en una referencia, y estés
 escribiendo código genérico.
 
-[❮ anterior](ch04-08-ffi.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch04-10-release-channels.md)
+[❮ 4.8. FFI](ch04-08-ffi.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[4.10. Canales de Distribución ❯](ch04-10-release-channels.md)

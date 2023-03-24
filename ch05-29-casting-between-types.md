@@ -1,16 +1,18 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Conversión entre Tipos
+[[❮]](ch05-28-type-aliases.md)
+[[❯]](ch05-30-associated-types.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) >
+5.29. Conversión entre Tipos
 
-## El Lenguaje de Programación Rust
-
-### 5.29. Conversión entre Tipos
+# 5.29. Conversión entre Tipos
 
 Rust, con su foco en seguridad, proporciona dos formas diferentes de conversión
 entre tipos. La primera, `as`, es para conversión segura. En contraste,
 `transmute` permite conversion arbitraria, y es una de las características mas
 peligrosas de Rust!
 
-### `as`
+## `as`
 
 La palabra reservada `as` lleva a cabo conversion básica:
 
@@ -41,7 +43,7 @@ valores: los cuatro elementos en el arreglo. Este tipo de conversiones son muy
 peligrosas, debido a que asumen cosas acerca de como las multiples estructuras
 subyacentes están implementadas. Para esto, necesitamos algo mas peligroso.
 
-### `transmute`
+## `transmute`
 
 La función `transmute` es proporcionada por una
 [intrínseca del compilador][intrinsics], y lo que hace es muy simple, pero al
@@ -96,6 +98,6 @@ error: transmute called on types with different sizes: [u8; 4] (32 bits) to u64
 
 Dicho esto, estás por tu cuenta!
 
-[❮ anterior](ch05-28-type-aliases.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-30-associated-types.md)
+[❮ 5.28. Alias `type`](ch05-28-type-aliases.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.30. Tipos Asociados ❯](ch05-30-associated-types.md)

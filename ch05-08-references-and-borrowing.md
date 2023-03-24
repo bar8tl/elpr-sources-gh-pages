@@ -1,9 +1,11 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Referencias y Préstamo
+[[❮]](ch05-07-ownership.md)
+[[❯]](ch05-09-lifetimes.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) >
+5.8. Referencias y Préstamo
 
-## El Lenguaje de Programación Rust
-
-### 5.8. Referencias y Préstamo
+# 5.8. Referencias y Préstamo
 
 Esta guía es una de las tres presentando el sistema de pertenencia de Rust. Esta
 es una de las características mas únicas y atractivas de Rust, con la que los
@@ -21,7 +23,7 @@ para entender completamente el sistema de pertenencia.
 [ownership]: ownership.html
 [lifetimes]: lifetimes.html
 
-### Meta
+## Meta
 
 Antes de entrar en detalle, dos notas importantes acerca del sistema de
 pertenencia.
@@ -48,7 +50,7 @@ de préstamo.
 
 Con eso en mente, aprendamos acerca de el préstamo.
 
-### Préstamo
+## Préstamo
 
 Al final de la sección de [pertenencia][ownership], teníamos una función fea que
 lucia así:
@@ -118,7 +120,7 @@ v.push(5);
 Insertar un valor causa una mutación en el vector, y no tenemos permitido
 hacerlo.
 
-### referencias &mut
+## referencias &mut
 
 Existe un segundo tipo de referencia: `&mut T`. Una ‘referencia mutable’ que
 permite mutar el recurso que estas tomando prestado. Por ejemplo:
@@ -163,7 +165,7 @@ fn main() {
 
 Al parecer, hay reglas.
 
-### Las Reglas
+## Las Reglas
 
 He aqui las reglas acerca del préstamo en Rust:
 
@@ -189,7 +191,7 @@ rompemos las reglas.
 
 Con esto en mente, consideremos nuestro ejemplo otra vez.
 
-### Pensando en ámbitos
+## Pensando en ámbitos
 
 He aqui el código:
 
@@ -260,13 +262,13 @@ println!("{}", x);  // <- intento de tomar prestado x aqui
 No hay problema. Nuestro préstamo mutable sale de ámbito antes de que creemos un
 préstamo inmutable. El ámbito es clave para ver cuanto dura el préstamo.
 
-### Problemas que el préstamo previene
+## Problemas que el préstamo previene
 
 Porque tenemos estas reglas restrictivas? Bueno, como lo notamos, estas reglas
 previenen condiciones de carrera. Que tipos de problemas causan las condiciones
 de carrera? Acá unos pocos.
 
-### Invalidación de Iteradores
+## Invalidación de Iteradores
 
 Un ejemplo es la ‘invalidación de iteradores’, que ocurre cuando tratas de mutar
 una colección mientras estas iterando sobre ella. El comprobador de prestamos de
@@ -314,7 +316,7 @@ for i in &v {
 
 No podemos modificar `v` debido a que esta tomado prestado por el ciclo.
 
-### uso despues de liberacion (use after free)
+## uso despues de liberacion (use after free)
 
 Las referencias no deben vivir por mas tiempo que el recurso al cual estas
 apuntan. Rust chequeara los ámbitos de tus referencias para asegurarse de que
@@ -399,6 +401,6 @@ statement 1 at 3:14
 En el ejemplo anterior, `y` es declarada antes que `x`, significando que `y`
 vive mas que `x`, lo cual no esta permitido.
 
-[❮ anterior](ch05-07-ownership.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-09-lifetimes.md)
+[❮ 5.7. Pertenencia](ch05-07-ownership.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.9. Tiempos de Vida ❯](ch05-09-lifetimes.md)

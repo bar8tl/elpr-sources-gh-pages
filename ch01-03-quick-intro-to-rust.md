@@ -1,9 +1,10 @@
-[Indice general](_index.md) > [Introduccion](ch01-00-intro.md) > Una breve
-introducción a Rust
+[[❮]](ch01-02-contributing.md)
+[[❯]](ch02-00-getting-started.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[1. Introduccion](ch01-00-intro.md) > 1.3. Una breve introducción a Rust
 
-## El Lenguaje de Programación Rust
-
-### Una breve introducción a Rust
+# 1.3. Una breve introducción a Rust
 
 ¿Es Rust un lenguaje en el cual estarías interesado? Examinemos unos pequeños
 ejemplos de código que demuestran algunas de sus fortalezas.
@@ -165,6 +166,6 @@ Este concepto de pertenencia no es solo bueno para prevenir punteros colgantes,
 sino un conjunto entero de problemas, como invalidacion de iteradores,
 concurrencia y más.
 
-[❮ anterior](ch01-02-contributing.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch02-00-getting-started.md)
+[❮ 1.2. Contribuyendo](ch01-02-contributing.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[2. Primeros Pasos ❯](ch02-00-getting-started.md)

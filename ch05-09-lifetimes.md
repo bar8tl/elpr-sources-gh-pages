@@ -1,9 +1,11 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Tiempos de Vida
+[[❮]](ch05-08-references-and-borrowing.md)
+[[❯]](ch05-10-mutability.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) >
+5.9. Tiempos de Vida
 
-## El Lenguaje de Programación Rust
-
-### 5.9. Tiempos de Vida
+# 5.9. Tiempos de Vida
 
 Esta guía es una de las tres presentando el sistema de pertenencia de Rust. Esta
 es una de las características mas únicas y atractivas de Rust, con la que los
@@ -21,7 +23,7 @@ para entender completamente el sistema de pertenencia.
 [ownership]: ownership.html
 [lifetimes]: lifetimes.html
 
-### Meta
+## Meta
 
 Antes de entrar en detalle, dos notas importantes acerca del sistema de
 pertenencia.
@@ -48,7 +50,7 @@ de préstamo.
 
 Con eso en mente, aprendamos acerca de los tiempos de vida.
 
-### Tiempos de vida
+## Tiempos de vida
 
 Prestar una referencia a otro recurso del que alguien mas es dueño puede ser
 complicado. Por ejemplo, imagina este conjunto de operaciones:
@@ -125,7 +127,7 @@ vida `'a` se ha metido entre el `&` y el `mut i32`. Leemos `&mut i32` como ‘un
 referencia mutable a un `i32`’ y `&'a mut i32` como ‘una referencia mutable a un
 `i32` con el tiempo de vida `'a`’.
 
-# En `struct`s
+## En `struct`s
 
 También necesitaras tiempos de vida explícitos cuando trabajes con
 [`struct`][structs]s:
@@ -167,7 +169,7 @@ hace uso de el. Entonces, porque necesitamos un tiempo de vida aquí? Necesitamo
 asegurarnos que cualquier referencia a un `Foo` no pueda vivir mas que la
 referencia a un `i32` que este contiene.
 
-### bloques `impl`
+## bloques `impl`
 
 Implementemos un metodo en `Foo`:
 
@@ -281,7 +283,7 @@ Los tiempos de vida con nombre son una forma de darles a dichos ámbitos un
 nombre. Darle un nombre a algo es el primer paso hacia poder hablar acerca de
 el.
 
-### 'static
+## 'static
 
 El tiempo de vida denominado ‘static’ es un tiempo de vida especial. Este señala
 que algo posee el tiempo de vida de el programa completo. La mayoría de los
@@ -304,7 +306,7 @@ let x: &'static i32 = &FOO;
 Lo anterior agrega un `i32` a el segmento de datos de el binario, y `x` es una
 referencia a el.
 
-### Elision de tiempos de vida
+## Elision de tiempos de vida
 
 Rust soporta una inferencia de tipos poderosa en los cuerpos de función, pero
 esta prohibido en las firmas de elementos permitir razonamiento basado
@@ -354,7 +356,7 @@ vida de salida elididos.
 
 De lo contrario, es un error elidir un tiempo de vida de salida.
 
-### Ejemplos
+## Ejemplos
 
 He aqui algunos ejemplos de funciones con tiempos de vida elididos. Hemos
 pareado cada ejemplo de un tiempo de vida elidido con su forma expandida.
@@ -386,6 +388,6 @@ fn new(buf: &mut [u8]) -> BufWriter; // elidido
 fn new<'a>(buf: &'a mut [u8]) -> BufWriter<'a> // expanded
 ```
 
-[❮ anterior](ch05-08-references-and-borrowing.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-10-mutability.md)
+[❮ 5.8. Referencias y Préstamo](ch05-08-references-and-borrowing.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.10. Mutabilidad ❯](ch05-10-mutability.md)

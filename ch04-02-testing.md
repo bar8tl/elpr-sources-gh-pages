@@ -1,9 +1,10 @@
-[Indice general](_index.md) > [Rust Efectivo](ch04-00-effective-rust.md) >
-Pruebas
+[[❮]](ch04-01-the-stack-and-the-heap.md)
+[[❯]](ch04-03-conditional-compilation.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[4. Rust Efectivo](ch04-00-effective-rust.md) > 4.2. Pruebas
 
-## El Lenguaje de Programación Rust
-
-### 4.2. Pruebas
+# 4.2. Pruebas
 
 > Probar programas puede ser una forma efectiva de mostrar la presencia de bugs,
 > pero es desesperanzadamente inadecuada para mostrar su ausencia.
@@ -15,7 +16,7 @@ pensamiento en relación a la forma correcta e incorrecta de escribir pruebas.
 Todos esos enfoques usan las mismas herramientas básicas, en esta sección te
 mostraremos la sintaxis para hacer uso de ellas.
 
-### El atributo `test`
+## El atributo `test`
 
 En esencia, una prueba en Rust es una función que esta anotada con el atributo
 `test`. Vamos a crear un nuevo proyecto llamado `sumador` con Cargo:
@@ -228,7 +229,7 @@ Este es un uso muy común de `assert_eq!`: llamar alguna función con algunos
 argumentos conocidos y comparar la salida de dicha llamada con la salida
 esperada.
 
-### El modulo `tests`
+## El modulo `tests`
 
 Hay una forma en la cual nuestro ejemplo no es idiomático: le falta el modulo
 `tests`. La manera idiomática de escribir nuestro ejemplo luce así:
@@ -306,7 +307,7 @@ La convención actual es usar el modulo `tests` para contener tus pruebas de
 funcionalidad va aquí. Pero que acerca de las pruebas "estilo-integracion"? Para
 ellas, tenemos el directorio `tests`.
 
-### El directorio `tests`
+## El directorio `tests`
 
 Para escribir una prueba de integración, creemos un directorio `tests` y
 coloquemos un archivo `tests/lib.rs` dentro, con el siguiente de contenido:
@@ -439,6 +440,6 @@ pruebas de documentación: el `_0` es generado para la prueba del modulo, y
 `suma_dos_0` para la prueba de función. Estos números se auto incrementaran con
 nombres como `suma_dos_1` a medida que mas ejemplos son agregados.
 
-[❮ anterior](ch04-01-the-stack-and-the-heap.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch04-03-conditional-compilation.md)
+[❮ 4.1. La Pila y el Montículo](ch04-01-the-stack-and-the-heap.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[4.3. Compilación Condicional ❯](ch04-03-conditional-compilation.md)

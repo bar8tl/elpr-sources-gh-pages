@@ -1,11 +1,12 @@
-[Indice general](_index.md) > [Rust Nocturno](ch06-00-nightly-rust.md) >
-Plugins del Compilador
+[[❮]](ch06-00-nightly-rust.md)
+[[❯]](ch06-02-inline-assembly.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[6. Rust Nocturno](ch06-00-nightly-rust.md) > 6.1. Plugins del Compilador
 
-## El Lenguaje de Programación Rust
+# 6.1. Plugins del Compilador
 
-### 6.1. Plugins del Compilador
-
-### Introducción
+## Introducción
 
 `rustc` puede cargar plugins de compilador, que son bibliotecas de usuario que
 extienden el comportamiento del compilador con nuevas extensiones de sintaxis,
@@ -32,7 +33,7 @@ La practica usual es colocar a los plugins del compilador en su propio crate,
 separados de cualquier macro `macro_rules!` o código Rust ordinario que vayan a
 ser usados por los consumidores de la biblioteca.
 
-### Extensiones de sintaxis
+## Extensiones de sintaxis
 
 Los plugins pueden extender la sintaxis de Rust de varias maneras. Una forma de
 extension de sintaxis son las macros procedurales. Estas son invocadas de la
@@ -134,7 +135,7 @@ y a el
 Para un ejemplo mas involucrado con macros, ve a
 [`regex_macros`](https://github.com/rust-lang/regex/blob/master/regex_macros/src/lib.rs).
 
-### Tips y trucos
+## Tips y trucos
 
 Algunos de los [tips de depuración de macros](macros.html#debugging-macro-code)
 son aplicables.
@@ -180,7 +181,7 @@ y un poco rústicos en los bordes. Sin embargo, la implementación puede ser un
 buen punto de partida para un quasiquote mejorado como una biblioteca plugin
 ordinaria.
 
-### Plugins lint
+## Plugins lint
 
 Los plugins pueden extender la
 [infraestructura de lints de Rust](../reference.html#lint-check-attributes) con
@@ -249,9 +250,7 @@ Los componentes de un plugin lint son:
 
 * una o mas invocaciones `declare_lint!`, las cuales defines structs
 [`Lint`](../rustc/lint/struct.Lint.html).
-
 * un struct manteniendo el estado necesario para el pass lint (aquí, ninguno);
-
 * una implementación [`LintPass`](../rustc/lint/trait.LintPass.html) definiendo
 como chequear cada elemento de sintaxis. Un único `LintPass` puede llamar a
 `span_lint` para diferentes `Lint`s, pero debe registrarlos a todos a través del
@@ -273,6 +272,6 @@ Puedes ejecutar `rustc -W help foo.rs` para ver una lista de los lints que
 `rustc` conoce, incluyendo aquellos proporcionados por plugins cargados por
 `foo.rs`.
 
-[❮ anterior](ch06-00-nightly-rust.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch06-02-inline-assembly.md)
+[❮ 6. Rust Nocturno](ch06-00-nightly-rust.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[6.2. Ensamblador en Linea ❯](ch06-02-inline-assembly.md)

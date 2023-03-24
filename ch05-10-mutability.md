@@ -1,9 +1,10 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Mutabilidad
+[[❮]](ch05-09-lifetimes.md)
+[[❯]](ch05-11-structs.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > 5.10. Mutabilidad
 
-## El Lenguaje de Programación Rust
-
-### 5.10. Mutabilidad
+# 5.10. Mutabilidad
 
 Mutabilidad, es la habilidad que una cosa posee para ser cambiada, funciona un
 poco diferente en Rust que en otros lenguajes. El primer aspecto de la
@@ -66,7 +67,7 @@ fn foo(mut x: i32) {
 
 [pattern]: patterns.html
 
-### Mutabilidad Interior vs. Mutabilidad Exterior
+## Mutabilidad Interior vs. Mutabilidad Exterior
 
 Sin embargo, cuando decimos que algo es ‘immutable’ en Rust, esto no significa
 que no pueda ser cambiado: lo que decimos es que algo tiene ‘mutabilidad
@@ -137,7 +138,7 @@ hace: aplica las reglas de préstamo de Rust en tiempo de ejecución, y hace
 otro aspecto de las reglas de mutabilidad de Rust. Hablemos acerca de ello
 primero.
 
-### Mutabilidad a nivel de campos
+## Mutabilidad a nivel de campos
 
 La mutabilidad es una propiedad de un préstamo (`&mut`) o un enlace a variable
 (`let mut`). Esto se traduce en que, por ejemplo, no puedes tener un
@@ -192,6 +193,6 @@ println!("y: {:?}", punto.y);
 Esto imprimirá `y: Cell { value: 7 }`. Hemos actualizado `y` de manera
 satisfactoria.
 
-[❮ anterior](ch05-09-lifetimes.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-11-structs.md)
+[❮ 5.9. Tiempos de Vida](ch05-09-lifetimes.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.11. Estructuras ❯](ch05-11-structs.md)

@@ -1,9 +1,10 @@
-[Indice general](_index.md) > [Rust Efectivo](ch04-00-effective-rust.md) >
-Documentación
+[[❮]](ch04-03-conditional-compilation.md)
+[[❯]](ch04-05-iterators.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[4. Rust Efectivo](ch04-00-effective-rust.md) > 4.4. Documentación
 
-## El Lenguaje de Programación Rust
-
-### 4.4. Documentación
+# 4.4. Documentación
 
 La documentación es una parte importante de cualquier proyecto de software y un
 ciudadano de primera clase en Rust. Hablemos acerca de las herramientas que Rust
@@ -17,7 +18,7 @@ la documentación. `rustdoc` es también usada por Cargo a través de `cargo doc
 La documentación puede ser generada de dos formas: desde el código fuente, o
 desde archivos Markdown.
 
-### Documentando código fuente
+## Documentando código fuente
 
 La principal forma de documentar un proyecto Rust es a través de la anotación
 del código fuente. Para este propósito, puedes usar comentarios de
@@ -85,7 +86,7 @@ ellos, y no hay nada después del ultimo comentario.
 
 [rc-new]: http://doc.rust-lang.org/nightly/std/rc/struct.Rc.html#method.new
 
-### Escribiendo comentarios de documentación
+## Escribiendo comentarios de documentación
 
 De cualquier modo, cubramos cada parte de este comentario en detalle:
 
@@ -109,7 +110,7 @@ Nuestro ejemplo original solo tenia una linea de resumen, pero si hubiésemos
 tenido mas cosas que decir, pudimos haber agregado mas explicación en un párrafo
 nuevo.
 
-#### Secciones especiales
+### Secciones especiales
 
 ```rust
 /// # Examples
@@ -185,7 +186,7 @@ sección:
 
 Discutamos los detalles de esos bloques de código.
 
-#### Anotaciones de bloques de código
+### Anotaciones de bloques de código
 
 Para escribir alguna código Rust en un comentario, usa los graves triples:
 
@@ -214,7 +215,7 @@ manera que no se vuelvan obsoletos con el tiempo. Si tienes algún código C per
 `rustdoc` piensa que es Rust, es porque olvidaste la anotación, `rustdoc` se
 quejara al momento de tratar de generar la documentación.
 
-### Documentación como pruebas
+## Documentación como pruebas
 
 Discutamos nuestra documentación de ejemplo:
 
@@ -345,7 +346,7 @@ He aquí la misma explicación, en texto plano:
 Al repetir todas las partes del ejemplo, puedes asegurarte que tu ejemplo aun
 compila, mostrando solo las partes relevantes a tu explicación.
 
-### Documentando macros
+## Documentando macros
 
 He aquí un ejemplo de la documentación a una macro:
 
@@ -380,7 +381,7 @@ tal manera que podamos agregar el atributo `#[macro_use]`. Segundo,
 necesitaremos agregar nuestra propia `main()`. Finalmente, un uso juicioso de
 `#`  para comentar esas dos cosas, de manera que nos se muestren en la salida.
 
-### Ejecutando pruebas de documentación
+## Ejecutando pruebas de documentación
 
 Para correr las pruebas puedes:
 
@@ -433,7 +434,7 @@ El atributo `no_run` compilara tu código, pero no lo ejecutara. Esto es
 importante para ejemplos como "He aquí como iniciar un servicio de red," el
 cual debes asegurarte que compile, pero podría causar un ciclo infinito!
 
-### Documentando módulos
+## Documentando módulos
 
 Rust posee otro tipo de comentario de documentación, `//!`. Este comentario no
 documenta el siguiente item, este comenta el item que lo encierra. En otras
@@ -466,7 +467,7 @@ acerca del estilo y formato de la documentación (ingles)
 
 [rfc505]: https://github.com/rust-lang/rfcs/blob/master/text/0505-api-comment-conventions.md
 
-### Otra documentación
+## Otra documentación
 
 Todo este comportamiento funciona en archivos no Rust también. Debido a que los
 comentarios son escritos en Markdown, frecuentemente son archivos `.md`.
@@ -535,7 +536,7 @@ pero puede ser util cuando se esten cambiando ciertas opciones, o escribiendo
 una macro.
 
 
-### Re-exports
+## Re-exports
 
 `rustdoc` mostrara la documentación para un re-export publico en ambos lugares:
 
@@ -558,7 +559,7 @@ extern crate foo;
 pub use foo::bar;
 ```
 
-### Controlando HTML
+## Controlando HTML
 
 Puedes controlar algunos aspectos de el HTML que `rustdoc` genera a través de la
 versión `#![doc]` del atributo:
@@ -583,7 +584,7 @@ personalización:
 - `--html-after-content FILE`: incluye el contenido de FILE después de todo el
 contenido renderizado.
 
-### Nota de seguridad
+## Nota de seguridad
 
 El Markdown en los comentarios de documentación es puesto sin procesar en la
 pagina final. Se cuidadoso con HTML literal:
@@ -593,6 +594,6 @@ pagina final. Se cuidadoso con HTML literal:
 # fn foo() {}
 ```
 
-[❮ anterior](ch04-03-conditional-compilation.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch04-05-iterators.md)
+[❮ 4.3. Compilación Condicional](ch04-03-conditional-compilation.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[4.5. Iteradores ❯](ch04-05-iterators.md)

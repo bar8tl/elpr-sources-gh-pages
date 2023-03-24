@@ -1,8 +1,10 @@
-[Indice general](_index.md) > [Introduccion](ch01-00-intro.md) > Bienvenida
+[[❮]](ch01-00-into.md)
+[[❯]](ch01-02-contributing.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[1. Introduccion](ch01-00-intro.md) > 1.1. Bienvenida
 
-## El Lenguaje de Programación Rust
-
-### 1.1. Bienvenida
+# 1.1. Bienvenida
 
 ¡Bienvenido! Este libro te enseñará acerca del
 [Lenguage de Programación Rust][rust]. Rust es un lenguaje de programación de
@@ -32,7 +34,7 @@ Rust.
 pedazos.
 * [Rust Nocturno][nr] - Características todavía no disponiles en builds
 estables.
-* [Gloario][gl] - Referencia de los términos usados en el libro.
+* [Glosario][gl] - Referencia de los términos usados en el libro.
 * [Investigacion Academica][ar] - Literatura que influenció Rust.
 
 [gs]: getting-started.md
@@ -49,6 +51,6 @@ un proyecto o ‘Sintaxis y Semántica’, si prefieres comenzar por lo más peq
 aprendiendo un único concepto detalladamente antes de moverte al siguiente.
 Abundantes enlaces cruzados conectan dichas partes.
 
-[❮ anterior](ch01-00-into.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch01-02-contributing.md)
+[❮ 1. Introducción](ch01-00-into.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[1.2. Contribuyendo ❯](ch01-02-contributing.md)

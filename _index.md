@@ -1,8 +1,11 @@
-Indice general
+[[❮]](_index.md)
+[[❯]](ch01-00-intro.md)
+&nbsp;&nbsp;
+El Lenguaje de Programación Rust
 
-## El Lenguaje de Programación Rust
+# El Lenguaje de Programación Rust
 
-### Tabla de contenido
+## Tabla de contenido
 
 1. [Introducción](ch01-00-intro.md)
     1. [Bienvenida](ch01-01-Welcome.md)
@@ -79,6 +82,5 @@ Indice general
 7. [Glosario](ch07-00-glossary.md)
 8. [Bibliografia](ch08-00-bibliography.md)
 
-[❮ anterior](_index.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch01-00-intro.md)
+[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[1. Introducción ❯](ch01-00-intro.md)

@@ -1,9 +1,10 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Atributos
+[[❮]](ch05-26-const-and-static.md)
+[[❯]](ch05-28-type-aliases.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > 5.27. Atributos
 
-## El Lenguaje de Programación Rust
-
-### 5.27. Atributos
+# 5.27. Atributos
 
 Las declaraciones pueden ser anotadas con ‘atributos’ en Rust. Los atributos
 lucen así:
@@ -75,6 +76,6 @@ tienes permitido crear tus propios atributos, el compilador de Rust los define.
 
 [reference]: ../reference.html#attributes
 
-[❮ anterior](ch05-26-const-and-static.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-28-type-aliases.md)
+[❮ 5.26. `const` y `static`](ch05-26-const-and-static.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.28. Alias `type` ❯](ch05-28-type-aliases.md)

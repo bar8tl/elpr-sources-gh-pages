@@ -1,9 +1,10 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Macros
+[[❮]](ch05-33-deref-coercions.md)
+[[❯]](ch05-35-raw-pointers.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > 5.34. Macros
 
-## El Lenguaje de Programación Rust
-
-### 5.34. Macros
+# 5.34. Macros
 
 Por ahora, has aprendido mucho sobre las herramientas que Rust ofrece para
 abstraer y reutilizar código. Estas unidades de reutilización poseen una rica
@@ -36,7 +37,7 @@ anterior no quiere decir que las macros son malas; forman parte de Rust porque a
 veces son necesarias para código conciso y abstracto. Simplemente mantén en
 cuenta este equilibrio.
 
-### Definiendo una macro
+## Definiendo una macro
 
 Puede que ya hayas visto la macro `vec!`, utilizada para inicializar un [vector][]
 con un numero cualquiera de elementos.
@@ -98,7 +99,7 @@ exclamación, por ejemplo, `vec!`. Este signo de exclamación es
 parte de la sintaxis de invocación y sirve para distinguir una
 macro de una función ordinaria.
 
-### Coincidencia de patrones
+## Coincidencia de patrones
 
 Una macro se define a través de una serie de reglas, las cuales son casos de
 coincidencia de patrones. Anteriormente vimos
@@ -201,7 +202,7 @@ expresión. Con cuidado, se puede escribir una macro cuya expansión funcione en
 varios contextos. Por ejemplo, la abreviatura de un tipo de datos podría ser
 válida como una expresión o un patrón.
 
-### Repetición
+## Repetición
 
 El operador de repetición sigue dos reglas principales:
 
@@ -243,7 +244,7 @@ Este sistema se basa en
 "[Macro-by-Example](http://www.cs.indiana.edu/ftp/techreports/TR206.pdf)"
 (PDF).
 
-### Higiene
+## Higiene
 
 Algunos lenguajes implementan macros con sustitución de texto simple, lo que
 trae como consecuencia diversos problemas. Por ejemplo, este programa C imprime
@@ -386,7 +387,7 @@ fn main() {
 
 [items]: ../reference.html#items
 
-### Macros recursivas
+## Macros recursivas
 
 La expansión de una macro puede incluir más invocaciones a macro, incluyendo
 invocaciones de la misma macro que esta siendo expandida. Estas macros
@@ -425,7 +426,7 @@ fn main() {
 }
 ```
 
-### Depurando código de macro
+## Depurando código de macro
 
 Para ver los resultados de las macros en expansión, ejecuta
 `rustc --pretty expanded`. La salida representa todo un crate, por lo que
@@ -446,7 +447,7 @@ macros. Por ahora, son inestables y requieren puertas de características
 * `trace_macros!(true)` habilitara un mensaje compilador cada vez que una macro
 es expandida. Use `trace_macros!(false)` adelante en la expansión para apagarlo.
 
-### Mas información
+## Mas información
 
 El [capitulo avanzado de macros][] entra en mas detalles acerca de la sintaxis
 de macros. También describe como compartir macros entre diferentes crates y
@@ -454,6 +455,6 @@ módulos.
 
 [capitulo avanzado de macros]: advanced-macros.html
 
-[❮ anterior](ch05-33-deref-coercions.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-35-raw-pointers.md)
+[❮ 5.33. Coerciones Deref](ch05-33-deref-coercions.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.35. Apuntadores Planos ❯](ch05-35-raw-pointers.md)

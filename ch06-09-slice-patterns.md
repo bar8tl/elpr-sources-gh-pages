@@ -1,9 +1,10 @@
-[Indice general](_index.md) > [Rust Nocturno](ch06-00-nightly-rust.md) >
-Patrones Slice
+[[❮]](ch06-08-box-syntax-and-patterns.md)
+[[❯]](ch06-10-associated-constants.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[6. Rust Nocturno](ch06-00-nightly-rust.md) > 6.9. Patrones Slice
 
-## El Lenguaje de Programación Rust
-
-### 6.9. Patrones Slice
+# 6.9. Patrones Slice
 
 Si deseas hacer coincidencia de patrones en un slice o un arreglo, puedes usar
 `&` con la facilidad `slice_patterns`:
@@ -47,6 +48,6 @@ fn main() {
 }
 ```
 
-[❮ anterior](ch06-08-box-syntax-and-patterns.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch06-10-associated-constants.md)
+[❮ 6.8. Sintaxis Box y Patrones](ch06-08-box-syntax-and-patterns.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[6.10. Constantes Asociadas ❯](ch06-10-associated-constants.md)

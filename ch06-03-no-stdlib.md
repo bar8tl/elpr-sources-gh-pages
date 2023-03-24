@@ -1,9 +1,10 @@
-[Indice general](_index.md) > [Rust Nocturno](ch06-00-nightly-rust.md) >
-No stdlib
+[[❮]](ch06-02-inline-assembly.md)
+[[❯]](ch06-04-intrinsics.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[6. Rust Nocturno](ch06-00-nightly-rust.md) > 6.3. No stdlib
 
-## El Lenguaje de Programación Rust
-
-### 6.3. No stdlib
+# 6.3. No stdlib
 
 Por defecto, `std` es enlazada a cada crate Rust. En algunos contextos, enlazar
 a libstd es indeseable, y puede ser evitado agregando el atributo `#![no_std]` a
@@ -84,7 +85,7 @@ pero los crates que no disparan pánicos pueden tener seguro que esta función
 nunca sera llamada. La segunda función, `panic_fmt`, es también usada por los
 mecanismo de falla del compilador.
 
-### Usando libcore
+## Usando libcore
 
 > **Note**: la estructura de la biblioteca core es inestable, y es recomendado
 > usar la biblioteca estándar siempre y cuando sea posible.
@@ -169,6 +170,6 @@ requerimientos de plataforma. Otras bibliotecas, como liballoc, agregan
 funcionalidad a libcore asumiendo algunas cosas especificas de la plataforma,
 pero continua siendo mas portable que la biblioteca estándar.
 
-[❮ anterior](ch06-02-inline-assembly.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch06-04-intrinsics.md)
+[❮ 6.2. Ensamblador en Linea](ch06-02-inline-assembly.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[6.4. Intrínsecos ❯](ch06-04-intrinsics.md)

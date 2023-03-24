@@ -1,9 +1,10 @@
-[Indice general](_index.md) > [Aprende Rust](ch03-00-learn-rust.md) >
-La Cena de los Filósofos
+[[❮]](ch03-01-guessing-game.md)
+[[❯]](ch03-03-rust-inside-other-languages.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[3. Aprende Rust](ch03-00-learn-rust.md) > 3.2. La Cena de los Filósofos
 
-## El Lenguaje de Programación Rust
-
-### 3.2. La Cena de los Filósofos
+# 3.2. La Cena de los Filósofos
 
 Para nuestro segundo proyecto, echemos un vistazo a un problema clásico de
 concurrencia. Se llama ‘La cena de los filósofos’. Fue originalmente concebido
@@ -724,6 +725,6 @@ Michel Foucault ha finalizado de comer.
 
 Felicitaciones! Haz implementado un problema clásico de concurrencia en Rust.
 
-[❮ anterior](ch03-01-guessing-game.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch03-03-rust-inside-other-languages.md)
+[❮ 3.1. El Juego de las Adivinanzas](ch03-01-guessing-game.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[3.3. Rust dentro de otros Lenguajes ❯](ch03-03-rust-inside-other-languages.md)

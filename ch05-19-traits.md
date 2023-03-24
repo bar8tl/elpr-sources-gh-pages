@@ -1,9 +1,10 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Traits
+[[❮]](ch05-18-generics.md)
+[[❯]](ch05-20-drop.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > 5.19. Traits
 
-## El Lenguaje de Programación Rust
-
-### 5.19. Traits
+# 5.19. Traits
 
 Un trait es una facilidad del lenguaje que le indica compilador de Rust acerca
 de la funcionalidad que un tipo debe proveer.
@@ -52,7 +53,7 @@ Como puedes ver, el bloque `trait` luce muy similar a el bloque `impl`, pero no
 definimos un bloque, solo la firma de tipos. Cuando implementamos un trait,
 usamos `impl Trait for Item`, en vez de solo `impl Item`.
 
-### Limites trait para funciones genéricas
+## Limites trait para funciones genéricas
 
 Los traits son útiles porque permiten a un tipo hacer ciertas promesas acerca de
 su comportamiento. La funciones genéricas pueden explotar esto para restringir
@@ -161,7 +162,7 @@ Obtenemos un error en tiempo de compilación:
 error: the trait `TieneArea` is not implemented for the type `_` [E0277]
 ```
 
-### Limites de trait para estructuras genericas
+## Limites de trait para estructuras genericas
 
 Tus estructuras genéricas pueden beneficiarse también de las restricciones de
 trait. Todo lo que necesitas es agregar la restricción cuando declaras los
@@ -220,7 +221,7 @@ con eso necesitamos saber mas de los
 
 [operators-and-overloading]: operators-and-overloading.html
 
-### Reglas para la implementación de traits
+## Reglas para la implementación de traits
 
 Hasta ahora, solo hemos agregado implementaciones de traits a estructuras, pero
 puedes implementar cualquier trait para cualquier tipo. Técnicamente,
@@ -299,7 +300,7 @@ capitulo acerca de [objetos trait][to] para mas detalles.
 
 [to]: trait-objects.html
 
-### Multiples limites de trait
+## Multiples limites de trait
 
 Has visto que puedes limitar un parámetro de tipo genérico con un trait:
 
@@ -322,7 +323,7 @@ fn foo<T: Clone + Debug>(x: T) {
 
 `T` necesita ahora ser ambos `Clone` y `Debug`.
 
-### La clausula where
+## La clausula where
 
 Escribir funciones con solo unos pocos tipos genéricos y un pequeño numero de
 limites de trait no es tan feo, pero a medida que el numero se incrementa, la
@@ -413,7 +414,7 @@ Lo anterior demuestra una característica adicional de `where`: permite limites
 en los que el lado izquierdo es un tipo arbitrario (`i32` en este caso), no solo
 un simple parámetro de tipo (como `T`).
 
-### Metodos por defecto
+## Metodos por defecto
 
 Si ya sabes como un implementador típico definirá un método, puedes permitir a
 tu trait proporcionar uno método por defecto:
@@ -466,7 +467,7 @@ let sobre = SobreescribeDefault;
 assert!(sobre.is_invalid()); // prints "SobreescribeDefault.es_invalido llamada!"
 ```
 
-### Herencia
+## Herencia
 
 Algunas veces, implementar un trait requiere implementar otro:
 
@@ -506,6 +507,6 @@ Si olvidamos implementar `Foo`, Rust nos lo dira:
 error: the trait `main::Foo` is not implemented for the type `main::Baz` [E0277]
 ```
 
-[❮ anterior](ch05-18-generics.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-20-drop.md)
+[❮ 5.18. Genéricos](ch05-18-generics.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.10. Drop ❯](ch05-20-drop.md)

@@ -1,14 +1,15 @@
-[Indice general](_index.md) > Bibliografia
+[[❮]](ch07-00-glossary.md)
+[[❯]](_index.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) > 8. Bibliografia
 
-## El Lenguaje de Programación Rust
-
-### Bibliografia
+# Bibliografia
 
 Esta es una lista de lectura de material relevante a Rust. Incluye investigación
 previa que ha - en un momento u otro - influenciado el diseño de Rust, así como
 publicaciones relacionadas directamente con Rust.
 
-### Sistema de tipos
+## Sistema de tipos
 
 * [Region based memory management in Cyclone](http://209.68.42.137/ucsd-pages/Courses/cse227.w03/handouts/cyclone-regions.pdf)
 * [Safe manual memory management in Cyclone](http://www.cs.umd.edu/projects/PL/cyclone/scp.pdf)
@@ -20,7 +21,7 @@ publicaciones relacionadas directamente con Rust.
 * [Uniqueness and Reference Immutability for Safe Parallelism](https://research.microsoft.com/pubs/170528/msr-tr-2012-79.pdf)
 * [Region Based Memory Management](http://www.cs.ucla.edu/~palsberg/tba/papers/tofte-talpin-iandc97.pdf)
 
-### Concurrencia
+## Concurrencia
 
 * [Singularity: rethinking the software stack](https://research.microsoft.com/pubs/69431/osr2007_rethinkingsoftwarestack.pdf)
 * [Language support for fast and reliable message passing in singularity OS](https://research.microsoft.com/pubs/67482/singsharp.pdf)
@@ -39,13 +40,13 @@ publicaciones relacionadas directamente con Rust.
 * [Algorithms for scalable synchronization of shared-memory multiprocessors](https://www.cs.rochester.edu/u/scott/papers/1991_TOCS_synch.pdf)
 * [Epoch-based reclamation](https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-579.pdf).
 
-### Otros
+## Otros
 
 * [Crash-only software](https://www.usenix.org/legacy/events/hotos03/tech/full_papers/candea/candea.pdf)
 * [Composing High-Performance Memory Allocators](http://people.cs.umass.edu/~emery/pubs/berger-pldi2001.pdf)
 * [Reconsidering Custom Memory Allocation](http://people.cs.umass.edu/~emery/pubs/berger-oopsla2002.pdf)
 
-### Papers *acerca de* Rust
+## Papers *acerca de* Rust
 
 * [GPU Programming in Rust: Implementing High Level Abstractions in a
 Systems Level
@@ -89,6 +90,6 @@ et. al.](http://amitlevy.com/papers/tock-plos2015.pdf)
 * [You can't spell trust without Rust](https://raw.githubusercontent.com/Gankro/thesis/master/thesis.pdf).
 Tesis de master de Alexis Beingessner.
 
-[❮ anterior](ch07-00-glossary.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](_index.md)
+[❮ 7. Glosario](ch07-00-glossary.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[El Lenguaje de Programación Rust ❯](_index.md)

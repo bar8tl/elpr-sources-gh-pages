@@ -1,9 +1,10 @@
-[Indice general](_index.md) > [Rust Nocturno](ch06-00-nightly-rust.md) >
-Sintaxis Box y Patrones
+[[❮]](ch06-07-benchmark-tests.md)
+[[❯]](ch06-09-slice-patterns.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[6. Rust Nocturno](ch06-00-nightly-rust.md) > 6.8. Sintaxis Box y Patrones
 
-## El Lenguaje de Programación Rust
-
-### 6.8. Sintaxis Box y Patrones
+# 6.8. Sintaxis Box y Patrones
 
 Actualmente la única forma estable de crear un `Box` es a través del método
 `Box::new`. Tampoco es posible destructurar un `Box` en un patron match. La
@@ -34,7 +35,7 @@ Nota que estas facilidades están actualmente escondidas detrás de los feature
 gates `box_syntax` (creación de boxes) y `box_patterns` (destructuracion y
 coincidencia de patrones) debido a que la sintaxis podría cambiar en el futuro.
 
-### Retornando apuntadores
+## Retornando apuntadores
 
 En muchos lenguajes con apuntadores, podrías retornar un apuntador desde una
 función con el objetivo de evitar la copia de una estructura de datos grande.
@@ -106,6 +107,6 @@ Esto es lo suficientemente importante que se merece una repetición: los
 apuntadores no son para optimizar valores de retorno en tu código. Permite a el
 llamador decidir como usar tu salida.
 
-[❮ anterior](ch06-07-benchmark-tests.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch06-09-slice-patterns.md)
+[❮ 6.7. Pruebas de Rendimiento](ch06-07-benchmark-tests.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[6.9. Patrones Slice ❯](ch06-09-slice-patterns.md)

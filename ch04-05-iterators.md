@@ -1,9 +1,10 @@
-[Indice general](_index.md) > [Rust Efectivo](ch04-00-effective-rust.md) >
-Iteradores
+[[❮]](ch04-04-documentation.md)
+[[❯]](ch04-06-concurrency.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[4. Rust Efectivo](ch04-00-effective-rust.md) > 4.5. Iteradores
 
-## El Lenguaje de Programación Rust
-
-### 4.5. Iteradores
+# 4.5. Iteradores
 
 Hablemos de ciclos.
 
@@ -121,7 +122,7 @@ valores.
 Hablemos primeramente acerca de los consumidores, debido a que ya hemos visto un
 iterador, los rangos.
 
-### Consumidores
+## Consumidores
 
 Un *consumidor* opera en un iterador, retornando algún tipo de valor o valores.
 El consumidor mas común es `collect()`. Este código no compila, pero muestra la
@@ -221,7 +222,7 @@ Los consumidores son importantes debido a una propiedad adicional de los
 iteradores de la que no hemos hablado todavia: pereza (laziness). Hablemos mas
 acerca de los iteradores y veras porque los consumidores son importantes.
 
-### Iteradores
+## Iteradores
 
 Como hemos dicho antes, un iterador es algo en lo que podemos llamar el método
 `.next()` repetidamente, y este nos devuelve una secuencia de elementos. Debido
@@ -263,7 +264,7 @@ avanzados, incluyendo aquellos que son infinitos.
 Suficiente acerca de iteradores, los adaptadores de iteradores son el ultimo
 concepto relacionado a iteradores al que debemos hacer mención. Hagamoslo!
 
-### Adaptadores de iterador
+## Adaptadores de iterador
 
 Los *adaptadores de iteradores* toman un iterador y lo modifican de alguna
 manera, produciendo uno nuevo. El mas simple es llamado `map`:
@@ -345,6 +346,6 @@ ellos, quedaras enganchado. Para una lista de los diferentes iteradores y
 consumidores echa un vistazo a la [documentacion del modulo
 iterator](../std/iter/index.html) (ingles).
 
-[❮ anterior](ch04-04-documentation.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch04-06-concurrency.md)
+[❮ 4.4. Documentación](ch04-04-documentation.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[4.6. Concurrencia ❯](ch04-06-concurrency.md)

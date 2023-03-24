@@ -1,9 +1,10 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Comentarios
+[[❮]](ch05-03-primitive-types.md)
+[[❯]](ch05-05-if.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > 5.4. Comentarios
 
-## El Lenguaje de Programación Rust
-
-### 5.4. Comentarios
+# 5.4. Comentarios
 
 Ahora que hemos vistos algunas funciones, es buena idea aprender sobre los
 comentarios. Los comentarios son notas que dejas a otros programadores con la
@@ -69,6 +70,6 @@ Puedes usar la herramienta [`rustdoc`](documentation.html) para generar
 documentación en HTML a partir de dichos comentarios, así como ejecutar el
 código de los ejemplos como pruebas!
 
-[❮ anterior](ch05-03-primitive-types.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-05-if.md)
+[❮ 5.3. Tipos Primitivos](ch05-03-primitive-types.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.5. if ❯](ch05-05-if.md)

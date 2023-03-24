@@ -1,9 +1,11 @@
-[Indice general](_index.md) > [Rust Nocturno](ch06-00-nightly-rust.md) >
-Asignadores de Memoria Personalizados
+[[❮]](ch06-10-associated-constants.md)
+[[❯]](ch07-00-glossary.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[6. Rust Nocturno](ch06-00-nightly-rust.md) >
+6.11. Asignadores de Memoria Personalizados
 
-## El Lenguaje de Programación Rust
-
-### 6.11. Asignadores de Memoria Personalizados
+# 6.11. Asignadores de Memoria Personalizados
 
 La asignación de memoria no es siempre la cosa mas fácil de hacer, y si bien
 Rust generalmente lo hace por defecto en algunas oportunidades se hace necesario
@@ -15,7 +17,7 @@ asignador de memoria personalizado en funcionamiento.
 
 [rfc]: https://github.com/rust-lang/rfcs/blob/master/text/1183-swap-out-jemalloc.md
 
-### Asignador por defecto
+## Asignador por defecto
 
 El compilador actualmente viene con dos asignadores de memoria por defecto:
 `alloc_system` y `alloc_jemalloc` (algunos sistemas, sin embargo, no soportan
@@ -37,7 +39,7 @@ dentro de otra aplicación u otro mundo en el cual no puede de manera autoritari
 decidir cual asignador de memoria usar. Como resultado recurre a las APIs
 estándar (e.j. `malloc` y `free`) para adquirir y liberar memoria.
 
-### Cambiando Asignadores
+## Cambiando Asignadores
 
 Si bien las elecciones del compilador pueden funcionar la mayoría del tiempo,
 algunas veces es necesario personalizar ciertos aspectos. Sobreescribir la
@@ -72,7 +74,7 @@ pub fn foo() {
 # fn main() {}
 ```
 
-### Escribiendo un asignador personalizado
+## Escribiendo un asignador personalizado
 
 Algunas veces las opciones de jemalloc vs el asignador del sistema no son
 suficientes y un asignador completamente nuevo se hace necesario. En este caso
@@ -167,7 +169,7 @@ fn main() {
 }
 ```
 
-### Limitaciones de los asignadores personalizados
+## Limitaciones de los asignadores personalizados
 
 Hay algunas restricciones cuando se trabaja con asignadores de memoria
 personalizados que pueden causar errores de compilación:
@@ -177,13 +179,12 @@ ejecutables, dylibs y staticlibs deben ser enlazados con exactamente un
 asignador, de no haber sido seleccionado uno de manera explicita el compilador
 seleccionara uno. Por otro lado rlibs no necesitan enlazar con un asignador
 (pero igual pueden hacerlo).
-
 * Un consumidor de un asignador se etiqueta con `#![needs_allocator]` (e.j. el
 crate `liballoc` actualmente) y un crate `#[allocator]` no puede depender
 transitivamente en un crate que necesita un asignador (e.j las dependencias
 circulares no estan permitidas). Esto significa básicamente que los asignadores
 de memoria en la actualidad deben restringirse a libcore.
 
-[❮ anterior](ch06-10-associated-constants.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch07-00-glossary.md)
+[❮ 6.10. Constantes Asociadas](ch06-10-associated-constants.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[7. Glosario ❯](ch07-00-glossary.md)

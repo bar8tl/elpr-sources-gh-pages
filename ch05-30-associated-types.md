@@ -1,9 +1,11 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Tipos Asociados
+[[❮]](ch05-29-casting-between-types.md)
+[[❯]](ch05-31-unsized-types.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) >
+5.30. Tipos Asociados
 
-## El Lenguaje de Programación Rust
-
-### 5.30. Tipos Asociados
+# 5.30. Tipos Asociados
 
 Los tipos asociados son una parte poderosa del sistema de tipos de Rust. Se
 relacionan con la idea de una ‘familia de tipos’, en otras palabras, la
@@ -212,6 +214,6 @@ parámetro de tipo `N`. Lo mismo con `V=Vertice`. De no haber proporcionado esta
 restricción, no hubiéramos podido determinar contra cual `impl` debe ser usado
 el objeto trait.
 
-[❮ anterior](ch05-29-casting-between-types.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-31-unsized-types.md)
+[❮ 5.29. Conversión entre Tipos](ch05-29-casting-between-types.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.31. Tipos sin Tamaño ❯](ch05-31-unsized-types.md)

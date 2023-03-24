@@ -1,9 +1,11 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > `const` y `static`
+[[❮]](ch05-25-crates-and-modules.md)
+[[❯]](ch05-27-attributes.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) >
+5.28. `const` y `static`
 
-## El Lenguaje de Programación Rust
-
-### 5.26. `const` y `static`
+# 5.26. `const` y `static`
 
 Rust posee una manera de definir constantes con la palabra reservada `const`:
 
@@ -22,7 +24,7 @@ es debido a que estas son insertadas en linea en cada lugar en el que son
 usadas. Por esta razón, referencias a la misma constante no están garantizadas a
 apuntar a la misma dirección de memoria.
 
-### `static`
+## `static`
 
 Rust proporciona una facilidad de tipo ‘variable global’ en items estáticos.
 Son similares a las constantes, pero los items estáticos no son insertados en
@@ -48,7 +50,7 @@ static NOMBRE: &'static str = "Steve";
 
 [lifetimes]: lifetimes.html
 
-### Mutabilidad
+## Mutabilidad
 
 Puedes introducir mutabilidad con la palabra reservada `mut`:
 
@@ -78,20 +80,20 @@ podría no tener una implementación de [`Drop`][drop].
 
 [drop]: drop.html
 
-### Inicialización
+## Inicialización
 
 Ambos `const` y `static` tienen requerimientos al proporcionarles un valor. Solo
 se les puede proporcionar un valor que sea una expresión constante. En otras
 palabras, no puedes usar el resultado de una llamada a función, algo
 similarmente complejo o algo determinado en tiempo de ejecución.
 
-### Cual construcción debería usar?
+## Cual construcción debería usar?
 
 Casi siempre, si puedes escoger entre las dos, elige `const`. Es bastante raro
 que quieras tener una dirección de memoria asociada con tu constante, también,
 el usar const permite optimizaciones como propagación de constantes no solo en
 tu crate si no en los crates subyacentes.
 
-[❮ anterior](ch05-25-crates-and-modules.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-27-attributes.md)
+[❮ 5.25. Crates y Módulos](ch05-25-crates-and-modules.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.27 Atributos ❯](ch05-27-attributes.md)

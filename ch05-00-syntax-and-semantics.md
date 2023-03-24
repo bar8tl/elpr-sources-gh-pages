@@ -1,8 +1,9 @@
-[Indice general](_index.md) > Sintaxis y Semántica
+[[❮]](ch04-10-release-channels.md)
+[[❯]](ch05-01-variable-bindings.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) > 5. Sintaxis y Semántica
 
-## El Lenguaje de Programación Rust
-
-### 5. Sintaxis y Semántica
+# 5. Sintaxis y Semántica
 
 Esta sección divide a Rust en pequeños pedazos, uno para cada concepto.
 
@@ -50,6 +51,6 @@ de esta sección.
 - 5.35. [Apuntadores Planos](ch05-35-raw-pointers.md)
 - 5.36. [`unsafe`](ch05-36-unsafe.md)
 
-[❮ anterior](ch04-10-release-channels.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-01-variable-bindings.md)
+[❮ 4.10. Canales de Distribución](ch04-10-release-channels.md)
+&nbsp;|&nbsp;[Yabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.1. Enlaces a Variables ❯](ch05-01-variable-bindings.md)

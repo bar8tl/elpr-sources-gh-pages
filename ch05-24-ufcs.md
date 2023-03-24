@@ -1,10 +1,11 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Sintaxis Universal de
-Llamadas a Función
+[[❮]](ch05-23-closures.md)
+[[❯]](ch05-25-crates-and-modules.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) >
+5.24. Sintaxis Universal de Llamadas a Función
 
-## El Lenguaje de Programación Rust
-
-### 5.24. Sintaxis Universal de Llamadas a Función
+# 5.24. Sintaxis Universal de Llamadas a Función
 
 Algunas veces, varias funciones pueden tener el mismo nombre. Considera el
 siguiente código:
@@ -92,7 +93,7 @@ debemos pasar a `&b` de manera explicita.
 
 [methodsyntax]: method-syntax.html
 
-### Usando <>
+## Usando <>
 
 La forma de SULF de la que acabamos de hablar:
 
@@ -134,6 +135,6 @@ impl Foo for Bar {
 Lo anterior llamara el metodo `clone` en el trait `Clone`, en vez de la version
 `clone` del trait `Foo`.
 
-[❮ anterior](ch05-23-closures.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-25-crates-and-modules.md)
+[❮ 5.23. Closures](ch05-23-closures.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.25. Crates y Módulos ❯](ch05-25-crates-and-modules.md)

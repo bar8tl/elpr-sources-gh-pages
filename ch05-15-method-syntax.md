@@ -1,9 +1,11 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Sintaxis de Métodos
+[[❮]](ch05-14-patterns.md)
+[[❯]](ch05-16-vectors.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) >
+5.15. Sintaxis de Métodos
 
-## El Lenguaje de Programación Rust
-
-### 5.15. Sintaxis de Métodos
+# 5.15. Sintaxis de Métodos
 
 Las funciones son geniales, pero si deseas llamar bastantes en alguna data,
 puede tornarse incomodo. Considera este código:
@@ -25,7 +27,7 @@ Por suerte, como habrás podido deducir de la pregunta anterior, por supuesto qu
 podemos! Rust provee la habilidad de usar la denominada ‘sintaxis de llamada a
 métodos’ (‘method call syntax’) a través de la palabra reservada  `impl`.
 
-# Llamadas a métodos
+## Llamadas a métodos
 
 Así funcionan:
 
@@ -88,7 +90,7 @@ impl Circle {
 }
 ```
 
-# Llamadas a métodos en cadena
+## Llamadas a métodos en cadena
 
 Entonces, ahora sabemos como llamar a un método, como `foo.bar()`. Pero que hay
 acerca de nuestro ejemplo original, `foo.bar().baz()`? Se denomina
@@ -132,7 +134,7 @@ fn agrandar(&self, incremento: f64) -> Circulo {
 Solo decimos que retornamos un `Circulo`. Con este método, podemos agrandar un
 nuevo `Circulo` a un tamaño arbitrario.
 
-# Funciones asociadas
+## Funciones asociadas
 
 Puedes también definir funciones asociadas que no tomen el parámetro `self`. He
 aquí un patron muy común en código Rust:
@@ -164,7 +166,7 @@ asociadas son llamadas con la sintaxis `Struct::funcion()`, en lugar de
 `ref.metodo()`. Otros lenguajes llaman a las funciones asociadas
 ‘métodos estáticos’
 
-# El patrón Constructor (Builder)
+## El patrón Constructor (Builder)
 
 Digamos que queremos que nuestros usuarios puedan crear `Circulo`s, pero solo
 les permitiremos dar valores a las propiedades que sean relevantes para ellos.
@@ -237,6 +239,6 @@ hemos usado el sistema de tipos para hacer valer nuestros intereses: podemos
 usar los métodos en `ConstructorCirculo` para crear `Circulo`s en la forma que
 decidamos.
 
-[❮ anterior](ch05-14-patterns.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-16-vectors.md)
+[❮ 5.14. Patrones](ch05-14-patterns.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.16. Vectores ❯](ch05-16-vectors.md)

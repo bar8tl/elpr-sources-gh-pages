@@ -1,9 +1,10 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Enumeraciones
+[[❮]](ch05-11-structs.md)
+[[❯]](ch05-13-match.md)
+&nbsp;|&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > 5.12. Enumeraciones
 
-## El Lenguaje de Programación Rust
-
-### 5.12. Enumeraciones
+# 5.12. Enumeraciones
 
 Una enumeración (`enum`) en Rust es un tipo que representa data que puede ser
 una de un conjunto de variantes posible:
@@ -72,7 +73,7 @@ veremos en la sección [`traits`][traits].
 [if-let]: if-let.html
 [traits]: traits.html
 
-# Constructores como funciones
+## Constructores como funciones
 
 Un constructor de un enum puede ser también usado como una función. Por ejemplo:
 
@@ -114,6 +115,6 @@ let v1: Vec<Mensaje> = v.into_iter().map(Mensaje::Escribir).collect();
 [closures]: closures.html
 [iterators]: iterators.html
 
-[❮ anterior](ch05-11-structs.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-13-match.md)
+[❮ 5.11. Estructuras](ch05-11-structs.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.13. Match ❯](ch05-13-match.md)

@@ -1,8 +1,9 @@
-[Indice general](_index.md) > Aprende Rust
+[[❮]](ch02-03-hello-cargo.md)
+[[❯]](ch03-01-guessing-game.md)
+&nbsp;|&nbsp;
+[El Lenguaje de Programación Rust](_index.md) > 3. Aprende Rust
 
-## El Lenguaje de Programación Rust
-
-### 3. Aprende Rust
+# 3. Aprende Rust
 
 ¡Bienvenido! Esta sección tiene unos pocos tutoriales que te enseñarán Rust a
 través de la construcción de proyectos. Obtendrás una visión general, pero
@@ -17,6 +18,6 @@ vistazo a [Sintaxis y Semántica][ss].
 - 3.2. [La Cena de los Filósofos](ch03-02-dining-philosophers.md)
 - 3.3. [Rust dentro de otros Lenguajes](ch03-03-rust-inside-other-languages.md)
 
-[❮ anterior](ch02-03-hello-cargo.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch03-01-guessing-game.md)
+[❮ 2.3 ¡Hola, Cargo!](ch02-03-hello-cargo.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[3.1. El Juego de las Adivinanzas ❯](ch03-01-guessing-game.md)

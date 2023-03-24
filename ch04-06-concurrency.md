@@ -1,9 +1,10 @@
-[Indice general](_index.md) > [Rust Efectivo](ch04-00-effective-rust.md) >
-Concurrencia
+[[❮]](ch04-05-iterators.md)
+[[❯]](ch04-07-error-handling.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[4. Rust Efectivo](ch04-00-effective-rust.md) > 4.6. Concurrencia
 
-## El Lenguaje de Programación Rust
-
-### 4.6. Concurrencia
+# 4.6. Concurrencia
 
 La concurrencia y el paralelismo son dos tópicos increíblemente importantes en
 las ciencias de la computación, también son un tópico caliente en la industria
@@ -24,14 +25,14 @@ Rust maneja la concurrencia, puedes implementar una forma alternativa de
 hacerlo. [mio](https://github.com/carllerche/mio) es un vivo ejemplo de este
 principio en acción.
 
-### Bases: `Send` y `Sync`
+## Bases: `Send` y `Sync`
 
 La concurrencia es algo sobre lo que es difícil razonar. En Rust tenemos un
 poderoso, sistema de tipos estático que nos ayuda a razonar acerca de nuestro
 código. Como tal, Rust nos provee de dos traits para ayudarnos a darle sentido a
 código que pueda posiblemente ser concurrente.
 
-### `Send`
+## `Send`
 
 El primer trait del cual hablaremos es [`Send`](../std/marker/trait.Send.html)
 (ingles). Cuando un tipo `T` implementa `Send`, le indica al compilador que algo
@@ -46,7 +47,7 @@ De manera opuesta, si estamos envolviendo una biblioteca con FFI que no es
 threadsafe, no deberíamos querer implementar `Send`, de manera tal que el
 compilador nos ayude a asegurarnos que esta no pueda abandonar el hilo actual.
 
-### `Sync`
+## `Sync`
 
 El segundo de estos traits es llamado [`Sync`](../std/marker/trait.Sync.html)
 (ingles). Cuando un tipo `T` implementa `Sync`, le indica al el compilador que
@@ -62,7 +63,7 @@ fuertes acerca de las propiedades de tu código bajo concurrencia. En primer
 lugar, antes de demostrar porque, necesitamos aprender como crear un programa
 concurrente en Rust!
 
-### Hilos
+## Hilos
 
 La biblioteca estándar de Rust provee una biblioteca para el manejo de hilos,
 que te permite ejecutar código rust de forma paralela. He aqui un ejemplo basico
@@ -101,7 +102,7 @@ como consecuencia de compartir estado mutable. Rust ayuda con su sistema de
 tipos, previniendo condiciones de carrera en tiempo de compilación. Hablemos
 acerca de como efectivamente puedes compartir cosas entre hilos.
 
-### Estado Mutable Compartido Seguro
+## Estado Mutable Compartido Seguro
 
 Debido a el sistema de tipos de Rust, tenemos un concepto que suena como una
 mentira: "estado mutable compartido seguro". Muchos programadores concuerdan en
@@ -255,7 +256,7 @@ Una alternativa mas precisa a el temporizador seria el uso de uno de los
 mecanismos proporcionados por la biblioteca estándar de Rust para la
 sincronización entre hilos. Hablemos de ellos: los canales.
 
-### Canales
+## Canales
 
 He aquí una version nuestro código que usa canales para la sincronización, en
 lugar de esperar por un tiempo especifico:
@@ -322,7 +323,7 @@ hilo, y le solicitamos que calcule la respuesta, este luego nos envía la
 respuesta de regreso (usando `send()`) a través del canal.
 
 
-### Panicos
+## Panicos
 
 Un `panic!` causara la finalización abrupta (crash) del hilo de ejecución
 actual. Puedes usar los hilos de Rust como un mecanismo de aislamiento sencillo:
@@ -341,6 +342,6 @@ assert!(resultado.is_err());
 Nuestro `Thread` nos devuelve un `Result`, el cual nos permite chequear si el
 hilo ha hecho pánico o no.
 
-[❮ anterior](ch04-05-iterators.md)&nbsp;|&nbsp;
+[❮ 4.5. Iteradores](ch04-05-iterators.md)&nbsp;|&nbsp;
 [Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch04-07-error-handling.md)
+[4.7 Manejo de Errores ❯](ch04-07-error-handling.md)

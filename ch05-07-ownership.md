@@ -1,9 +1,10 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Pertenencia
+[[❮]](ch05-06-loops.md)
+[[❯]](ch05-08-references-and-borrowing.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > 5.7. Pertenencia
 
-## El Lenguaje de Programación Rust
-
-### 5.7. Pertenencia
+# 5.7. Pertenencia
 
 Esta guía es una de las tres presentando el sistema de pertenencia de Rust. Este
 es una de las características mas únicas e irresistibles de Rust, con la que
@@ -21,7 +22,7 @@ entender completamente el sistema de pertenencia de Rust.
 [borrowing]: references-and-borrowing.html
 [lifetimes]: lifetimes.html
 
-### Meta
+## Meta
 
 Antes de entrar en detalle, dos notas importantes acerca del sistema de
 pertenencia.
@@ -48,7 +49,7 @@ de préstamo.
 
 Con eso en mente, aprendamos acerca de la pertenencia.
 
-### Pertenencia
+## Pertenencia
 
 Los [Bindings a variable][bindings] poseen una propiedad en Rust: Estos ‘poseen
 pertenencia’ sobre lo que están asociados. Lo que se traduce a que cuando un
@@ -71,7 +72,7 @@ ocurre de manera determinista, al final de el ámbito.
 [heap]: the-stack-and-the-heap.html
 [bindings]: variable-bindings.html
 
-### Semantica de movimiento
+## Semantica de movimiento
 
 Hay algo mas sutil acá, Rust se asegura que solo exista _exactamente un_ binding
 a cualquier recurso en particular. Por ejemplo, si tenemos un vector, podemos
@@ -124,7 +125,7 @@ la pertenencia a algo, decimos que hemos ‘movido’ la cosa a la cual nos esta
 refiriendo. No necesitas ningún tipo de anotación especial para ello, es lo que
 Rust hace por defecto.
 
-### Los detalles
+## Los detalles
 
 La razón por la cual no podemos usar un binding a variable después de haberlo
 movido es sutil, pero importante. Cuando escribimos código como este:
@@ -152,7 +153,7 @@ Es importante destacar que algunas optimizaciones podrían remover la copia de
 los bytes en la pila, dependiendo de ciertas circunstancias. Así que puede no
 ser tan ineficiente a como luce inicialmente.
 
-### Tipos `Copy`
+## Tipos `Copy`
 
 Hemos establecido que cuando transferimos la pertenencia a otro binding a
 variable, no podemos usar el binding original. Sin embargo, existe un trait
@@ -221,7 +222,7 @@ Discutiremos como hacer que tus propios tipos sean `Copy` en la sección de
 
 [traits]: traits.html
 
-### Mas que pertenencia
+## Mas que pertenencia
 
 Por supuesto, si necesitaremos devolver la pertenencia con cada función que
 escribiésemos:
@@ -260,6 +261,6 @@ solucionar este problema.
 
 Es el tópico de la siguiente sección!
 
-[❮ anterior](ch05-06-loops.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-08-references-and-borrowing.md)
+[❮ 5.6. Ciclos](ch05-06-loops.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.8. Referencias y Préstamo ❯](ch05-08-references-and-borrowing.md)

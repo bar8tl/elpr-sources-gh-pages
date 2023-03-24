@@ -1,9 +1,11 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Coerciones Deref
+[[❮]](ch05-32-operators-and-overloading.md)
+[[❯]](ch05-34-macros.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) >
+5.33. Coerciones Deref
 
-## El Lenguaje de Programación Rust
-
-### 5.33. Coerciones Deref
+# 5.33. Coerciones Deref
 
 La biblioteca estándar proporciona un trait especial [`Deref`][deref]. Es usado
 normalmente para sobrecargar `*`, el operador de dereferencia:
@@ -96,7 +98,7 @@ foo(&owned);
 
 Los vectores pueden hacer `Deref` a un slice.
 
-### Deref y llamadas a metodo
+## Deref y llamadas a metodo
 
 `Deref` también entrara en efecto cuando se llame a un método. Considera el
 siguiente ejemplo:
@@ -128,6 +130,6 @@ definidos en `Foo` debido a que el compilador insertara tantas operaciones *
 sean necesarias para hacerlo funcionar. Y debido a que inserta `*`s, se hace uso
 de `Deref`.
 
-[❮ anterior](ch05-32-operators-and-overloading.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-34-macros.md)
+[❮ 5.32. Operadores y Sobrecarga](ch05-32-operators-and-overloading.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.34. Macros ❯](ch05-34-macros.md)

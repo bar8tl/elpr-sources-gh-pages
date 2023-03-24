@@ -1,9 +1,10 @@
-[Indice general](_index.md) > [Rust Efectivo](ch04-00-effective-rust.md) >
-La Pila y el Montículo
+[[❮]](ch04-00-effective-rust.md)
+[[❯]](ch04-02-testing.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[4. Rust Efectivo](ch04-00-effective-rust.md) > 4.4. La Pila y el Montículo
 
-## El Lenguaje de Programación Rust
-
-### 4.1. La Pila y el Montículo
+# 4.1. La Pila y el Montículo
 
 Como un lenguaje de sistemas, Rust opera a un bajo nivel. Si provienes de un
 lenguaje de alto nivel, hay algunos aspectos de los lenguajes de programación de
@@ -13,7 +14,7 @@ con el como lenguajes como C usan asignación desde la pila, este capitulo sera
 un repaso. Si no lo estas, aprenderás acerca de este concepto general, pero con
 un enfoque Rustero.
 
-### Manejo de memoria
+## Manejo de memoria
 
 Estos dos términos hacen referencia a el manejo de la memoria. La pila y el
 montículo son abstracciones que ayudan a determinar cuando asignar y liberar
@@ -26,7 +27,7 @@ Pero la asignación es local a una llamada a función, y es limitada en tamaño.
 montículo por otro lado, es mas lento, y es asignado por tu programa. Pero es
 efectivamente de un tamaño ilimitado, y es globalmente accesible.
 
-### La Pila
+## La Pila
 
 Hablemos acerca de este programa Rust:
 
@@ -199,7 +200,7 @@ Después `foo()` termina, dejando solo a `main()`
 Hemos terminado entonces. Se entiende? Es como apilar platos: agregas al tope y
 sacas de el.
 
-### El Montículo
+## El Montículo
 
 Ahora, todo esto trabaja bien, pero no todo funciona de esa manera. Algunas
 veces, necesitas pasar memoria entre diferentes funciones, o mantener memoria
@@ -304,7 +305,7 @@ la pertenencia (ownership), algunas veces llamado ‘moviendo fuera de la caja�
 
 Luego el registro de activación se va, liberando toda nuestra memoria.
 
-### Argumentos y prestamo (borrowing)
+## Argumentos y prestamo (borrowing)
 
 Hemos llevado a cabo algunos ejemplos básicos con la pila y el montículo, pero
 que hay acerca de los argumentos a funciones y el préstamo (borrowing)? He aquí
@@ -352,7 +353,7 @@ memoria: el valor de la referencia es solo un apuntador a una dirección de
 memoria. Si nos deshiciéramos de la memoria subyacente, las cosas no irían del
 todo bien.
 
-### Un ejemplo complejo
+## Un ejemplo complejo
 
 Bien, vayamos a través de este programa complejo paso-a-paso:
 
@@ -538,7 +539,7 @@ Después, `foo()` retorna:
 Entonces, finalmente `main()` retorna, lo cual limpia el resto. Cuando `i` es
 liberada (a través de `Drop`) esta limpiara también lo restante en el montículo.
 
-### Que hacen otros lenguajes?
+## Que hacen otros lenguajes?
 
 La mayoría de los lenguajes con un recolector de basura asignan desde el
 montículo por defecto. Esto significa que todos los valores están dentro de
@@ -548,7 +549,7 @@ optimizaciones que hacen que esto no sea 100% verdad todo el tiempo. En vez de
 confiar en la pila y `Drop` para limpiar la memoria, el recolector de basura es
 el encargado de administrar el montículo.
 
-### Cual usar?
+## Cual usar?
 
 Si la pila es mas rápida y mas fácil de usar, porque necesitamos el montículo?
 Una gran razón es que la asignación desde la pila significa que solo tienes
@@ -561,7 +562,7 @@ asigna desde la pila por defecto. El modelo LIFO de la pila es mas simple, a
 nivel fundamental. Esto tiene dos grandes impactos: eficiencia en tiempo de
 ejecución e impacto semántico.
 
-### Eficiencia en tiempo de Ejecucion.
+## Eficiencia en tiempo de Ejecucion.
 
 Administrar la memoria para la pila es trivial: La maquina simplemente
 incrementa un solo valor, el llamado "apuntador a la pila" (“stack pointer”). La
@@ -576,7 +577,7 @@ Si quisieras sumergirte mas en este tópico con mayor detalle,
 
 [wilson]: http://www.cs.northwestern.edu/~pdinda/icsclass/doc/dsa.pdf
 
-### Impacto semantico
+## Impacto semantico
 
 La asignación desde la pila impacta a Rust como lenguaje, y con ello el modelo
 mental del desarrollador. La semántica LIFO es lo que conduce como el lenguaje
@@ -596,6 +597,6 @@ montículo viene a costo de bien sea soporte significativo en tiempo de ejecuci�
 del programador (en la forma de llamadas manuales explícitas que requieren
 verificación no proporcionada por el compilador de Rust).
 
-[❮ anterior](ch04-00-effective-rust.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch04-02-testing.md)
+[❮ 4. Rust Efectivo](ch04-00-effective-rust.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[4.2. Pruebas ❯](ch04-02-testing.md)

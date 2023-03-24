@@ -1,9 +1,10 @@
-[Indice general](_index.md) > [Rust Nocturno](ch06-00-nightly-rust.md) >
-Pruebas de rendimiento
+[[❮]](ch06-06-advanced-linking.md)
+[[❯]](ch06-08-box-syntax-and-patterns.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[6. Rust Nocturno](ch06-00-nightly-rust.md) > 6.7. Pruebas de rendimiento
 
-## El Lenguaje de Programación Rust
-
-### 6.7. Pruebas de rendimiento
+# 6.7. Pruebas de rendimiento
 
 Rust soporta benchmarks, los cuales pueden probar el rendimiento de tu código.
 Pongamos esto en nuestro `src/lib.rs` (comentarios omitidos):
@@ -77,7 +78,7 @@ a una buena resolución.
 * Haz del código en ciclo `iter` algo simple, para ayudar a la identificación de
 mejoras de rendimiento (o regresiones)
 
-### Gotcha: optimizaciones
+## Gotcha: optimizaciones
 
 Hay otra parte difícil acerca de escribir pruebas de rendimiento: los benchmarks
 compilados con optimizaciones activadas pueden ser cambiados de manera dramática
@@ -161,6 +162,6 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 1 measured
 Sin embargo, aun cuando se usen cualquiera de las técnicas anteriores el
 optimizador todavía podría modificar un caso de pruebas de una manera indeseada.
 
-[❮ anterior](ch06-06-advanced-linking.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch06-08-box-syntax-and-patterns.md)
+[❮ 6.6. Enlace Avanzado](ch06-06-advanced-linking.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[6.8. Sintaxis Box y Patrones ❯](ch06-08-box-syntax-and-patterns.md)

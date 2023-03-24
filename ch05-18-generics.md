@@ -1,9 +1,10 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Genéricos
+[[❮]](ch05-17-strings.md)
+[[❯]](ch05-19-traits.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > 5.18. Genéricos
 
-## El Lenguaje de Programación Rust
-
-### 5.18. Genéricos
+# 5.18. Genéricos
 
 Algunas veces, cuando se escribe una función o una estructura de datos,
 podríamos desear que esta pudiese funcionar con multiples tipos de argumentos.
@@ -83,7 +84,7 @@ El tipo `Result<T, E>` se usa para retornar el resultado de una computación, co
 la posibilidad de retornar un error en caso de que dicha computación no haya
 sido exitosa.
 
-### Funciones genéricas
+## Funciones genéricas
 
 Podemos escribir funciones que tomen tipos genéricos con una sintaxis similar:
 
@@ -114,7 +115,7 @@ fn recibe_dos_cosas_de_distintos_tipos<T, U>(x: T, y: U) {
 }
 ```
 
-#$# Structs genericos
+## Structs genericos
 
 También puedes almacenar un tipo genérico en una estructura:
 
@@ -157,6 +158,6 @@ querrás intercambiar esa flexibilidad por mayor poder expresivo. Lee acerca de
 [traits]: traits.html
 [Vec]: ../std/vec/struct.Vec.html
 
-[❮ anterior](ch05-17-strings.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-19-traits.md)
+[❮ 5.17. Cadenas de Caracteres](ch05-17-strings.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.19. Traits ❯](ch05-19-traits.md)

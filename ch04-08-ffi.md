@@ -1,11 +1,13 @@
-[Indice general](_index.md) > [Rust Efectivo](ch04-00-effective-rust.md) >
-Interfaz de Funciones Foráneas/Externas
+[[❮]](ch04-07-error-handling.md)
+[[❯]](ch04-09-borrow-and-asref.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[4. Rust Efectivo](ch04-00-effective-rust.md) >
+4.8.Interfaz de Funciones Foráneas/Externas
 
-## El Lenguaje de Programación Rust
+# 4.8. Interfaz de Funciones Foráneas/Externas
 
-### 4.8. Interfaz de Funciones Foráneas/Externas
-
-### Introducción
+## Introducción
 
 Esta guía usara la biblioteca de compresión/descompresión
 [snappy](https://github.com/google/snappy) como introducción a la escritura de
@@ -80,7 +82,7 @@ extern {
 # fn main() {}
 ```
 
-### Creando una interfaz segura
+## Creando una interfaz segura
 
 La interfaz plana en C necesita ser envuelta con el objetivo de proveer
 seguridad en el manejo de memoria así como el uso de conceptos de alto nivel
@@ -187,7 +189,7 @@ pub fn descomprimir(orig: &[u8]) -> Option<Vec<u8>> {
 Como referencia, los ejemplos usados aquí están disponibles también como una
 [biblioteca en Github](https://github.com/thestinger/rust-snappy).
 
-### Destructores
+## Destructores
 
 La bibliotecas externas usualmente transfieren la pertenencia de los recursos a
 el código llamador. Cuando esto ocurre, debemos usar los destructores de Rust
@@ -197,7 +199,7 @@ para proveer seguridad y la garantía de la liberación de dichos recursos
 Para mas información acerca de los destructores, echa un vistazo a la sección
 del [trait Drop](../std/ops/trait.Drop.html).
 
-### Callbacks desde código C a funciones Rust
+## Callbacks desde código C a funciones Rust
 
 Algunas bibliotecas externas requieren el uso de callbacks para reportar de
 vuelta su estado o data parcial a el llamador. Es posible pasar funciones
@@ -250,7 +252,7 @@ void disparar_callback() {
 En este ejemplo el `main()` de Rust llamara a `disparar_callback()` en C, que a
 su vez llamara de vuelta a `callback()` en Rust.
 
-### Apuntando callbacks a objetos Rust
+## Apuntando callbacks a objetos Rust
 
 El ejemplo anterior demostró como una función global puede ser llamada desde
 código en C. Si embrago a veces se desea que el callback apunte a un objeto Rust
@@ -315,7 +317,7 @@ void disparar_callback() {
 }
 ```
 
-### Callbacks Asíncronos
+## Callbacks Asíncronos
 
 En los ejemplos anteriores los callbacks son invocados como una reacción directa
 a una llamada a función a la biblioteca externa en C. El control sobre el hilo
@@ -338,7 +340,7 @@ haya sido destruido. Esto puede ser llevado a cabo de-registrando el callback en
 el destructor del objeto y diseñando la biblioteca de manera tal que garantice
 que ningún callback sera ejecutado después de la de-registracion.
 
-### Enlace
+## Enlace
 
 El atributo `link` en bloques `extern` proporciona el bloque de construcción
 basico para instruir a rustc como enlazar con bibliotecas nativas. Hoy en dia
@@ -388,7 +390,7 @@ binario), la biblioteca sera enlazada.
 En OSX, los frameworks se comportan con la misma semantica que una biblioteca
 dinámica.
 
-### Bloques Unsafe
+## Bloques Unsafe
 
 Algunas operaciones, como dereferenciar punteros planos o llamadas a funciones
 que han sido marcadas como inseguras solo son permitidas dentro de bloques
@@ -406,7 +408,7 @@ Esta función puede ser invocada solo desde un bloque `unsafe` u otra función
 `unsafe`.
 
 
-### Accediendo globales externas
+## Accediendo globales externas
 
 APIs foráneas algunas veces exportan una variable global que podría hacer algo
 como llevar registro de algun estado global. Con la finalidad de acceder
@@ -459,7 +461,7 @@ fn main() {
 Nota que toda la interacción con un `static mut` es insegura, ambos lectura y
 escritura. Lidiar con estado global mutable requiere de un gran cuidado.
 
-### Convenciones de llamadas foráneas
+## Convenciones de llamadas foráneas
 
 La mayoría de el código foráneo expone un ABI C, y Rust usa por defecto la
 convención de llamadas de la plataforma al momento de llamar funciones externas.
@@ -502,7 +504,7 @@ traduce a que en nuestro ejemplo anterior, pudimos haber hecho uso de `extern
 "system" { ... }` para definir un bloque para todos los sistemas Windows, no
 solo los x86.
 
-### Interoperabilidad con código externo
+## Interoperabilidad con código externo
 
 Rust garantiza que la distribución de un `struct` sea compatible con la
 representación de la plataforma en C solo si el atributo `#[repr(C)]` es
@@ -529,7 +531,7 @@ La biblioteca estándar incluye alias de tipo y definiciones de funciones para l
 biblioteca estándar de C en el modulo `libc`, y Rust enlaza por defecto con
 `libc` y `libm`.
 
-### La "optimizacion de apuntador nulable"
+## La "optimizacion de apuntador nulable"
 
 Ciertos tipos están definidos para no ser `null`. Esto incluye referencias
 (`&T`,`&mut T`), boxes (`Box<T>`), y apuntadores a funciones
@@ -542,7 +544,7 @@ representada como un solo apuntador, y la variante sin data es representada como
 el apuntador null. Entonces `Option<extern "C" fn(c_int) -> c_int>` es como uno
 representa un apuntador a función nullable usando el ABI de C.
 
-### Llamando coding Rust desde C
+## Llamando coding Rust desde C
 
 Podrías querer compilar código Rust de modo que permita ser llamado desde C.
 Esto es fácil, pero requiere ciertas cosas:
@@ -562,7 +564,7 @@ El atributo `no_mangle` desactiva el estropeo (mangling) de nombres de Rust, de
 manera tal que sea mas facil de enlazar.
 
 
-### FFI y pánicos
+## FFI y pánicos
 
 Es importante estar consciente de los `panic!`os cuando se trabaja con FFI. Un
 `panic!` en al limite de FFI es comportamiento indefinido. Si estas escribiendo
@@ -586,6 +588,6 @@ pub extern fn oh_no() -> i32 {
 # fn main() {}
 ```
 
-[❮ anterior](ch04-07-error-handling.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch04-09-borrow-and-asref.md)
+[❮ 4.7. Manejo de Errores](ch04-07-error-handling.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[4.9. Borrow y AsRef ❯](ch04-09-borrow-and-asref.md)

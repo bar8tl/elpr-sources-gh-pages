@@ -1,9 +1,10 @@
-[Indice general](_index.md) > [Rust Nocturno](ch06-00-nightly-rust.md) >
-Constantes Asociadas
+[[❮]](ch06-09-slice-patterns.md)
+[[❯]](ch06-11-custom-allocators.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[6. Rust Nocturno](ch06-00-nightly-rust.md) > 6.10. Constantes Asociadas
 
-## El Lenguaje de Programación Rust
-
-### 6.10. Constantes Asociadas
+# 6.10. Constantes Asociadas
 
 Con el feature `associated_consts`, puedes definir constantes como:
 
@@ -83,6 +84,6 @@ impl Foo {
 }
 ```
 
-[❮ anterior](ch06-09-slice-patterns.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch06-11-custom-allocators.md)
+[❮ 6.9. Patrones Slice](ch06-09-slice-patterns.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[6.11. Asignadores de Memoria Personalizados ❯](ch06-11-custom-allocators.md)

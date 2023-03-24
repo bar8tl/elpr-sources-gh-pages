@@ -1,9 +1,10 @@
-[Indice general](_index.md) > [Aprende Rust](ch03-00-learn-rust.md) >
-Rust Dentro de Otros Lenguajes
+[[❮]](ch03-02-dining-philosophers.md)
+[[❯]](ch04-00-effective-rust.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[3. Aprende Rust](ch03-00-learn-rust.md) > 3.3. Rust dentro de otros Lenguajes
 
-## El Lenguaje de Programación Rust
-
-### 3.3. Rust Dentro de Otros Lenguajes
+# 3.3. Rust dentro de otros Lenguajes
 
 Para nuestro tercer proyecto, elegiremos algo que demuestra una de las mayores
 fortalezas de Rust: la ausencia de un entorno de ejecución.
@@ -35,7 +36,7 @@ ejemplos en Ruby, Python, y JavaScript.
 
 [ffi]: ffi.html
 
-### El problema
+## El problema
 
 Existen muchos problemas que podríamos haber escogido, pero elegiremos un
 ejemplo en el cual Rust tiene una ventaja clara por encima de otros lenguajes:
@@ -96,7 +97,7 @@ problemas similares a este en el mundo real. Para nuestros propósitos, levantar
 unos pocos hilos y ocuparlos representa una especie de computación paralela y
 costosa.
 
-### Una biblioteca Rust
+## Una biblioteca Rust
 
 Escribamos este problema en Rust. Primero, creemos un proyecto nuevo con Cargo:
 
@@ -219,7 +220,7 @@ plataforma.
 
 Ahora que tenemos nuestra biblioteca Rust, usémosla desde Ruby.
 
-### Ruby
+## Ruby
 
 Crea un archivo `embeber.rb` dentro de nuestro proyecto, y coloca esto dentro:
 
@@ -311,7 +312,7 @@ realmente fácil, y nos compra mucho performance.
 
 A continuación, probemos Python!
 
-### Python
+## Python
 
 Crea un archivo `embeber.py` en este directorio, y coloca esto en el:
 
@@ -331,7 +332,7 @@ Aun mas fácil! Usamos `cdll` del modulo `ctypes`. Una llamada rápida a
 
 En mi sistema, toma `0.017` segundos. Rápidillo!
 
-### Node.js
+## Node.js
 
 Node no es un lenguaje, pero es actualmente la implementación de Javascript
 dominante del lado del servidor.
@@ -367,12 +368,12 @@ representar ningún argumento. De allí simplemente llamamos a la función
 En mi sistema, este ejemplo toma unos rápidos `0.092` segundos.
 
 
-### Conclusion
+## Conclusion
 
 Como puedes ver, las bases de hacer FFI son _muy_ fáciles. Por supuesto hay
 mucho mas que podríamos hacer aquí. Echa un vistazo al capitulo [FFI][ffi]
 para mas detalles.
 
-[❮ anterior](ch03-02-dining-philosophers.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch04-00-effective-rust.md)
+[❮ 3.2. La Cena de los Filósofos](ch03-02-dining-philosophers.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[4. Rust Efectivo ❯](ch04-00-effective-rust.md)

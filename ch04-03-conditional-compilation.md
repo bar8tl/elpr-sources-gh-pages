@@ -1,9 +1,10 @@
-[Indice general](_index.md) > [Rust Efectivo](ch04-00-effective-rust.md) >
-Compilación Condicional
+[[❮]](ch04-02-testing.md)
+[[❯]](ch04-04-documentation.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[4. Rust Efectivo](ch04-00-effective-rust.md) > 4.3. Compilación Condicional
 
-## El Lenguaje de Programación Rust
-
-### 4.3. Compilación Condicional
+# 4.3. Compilación Condicional
 
 Rust posee un atributo especial, `#[cfg]`, que te permite compilar código basado
 en una opción proporcionada al compilador. Tiene dos formas:
@@ -70,7 +71,7 @@ Si lo compilamos con `cargo build --features "foo"`, Cargo enviara la opción
 compilamos con un `cargo build` normal, ninguna opción extra sera proporcionada,
 y debido a esto, ningún modulo `foo` existirá.
 
-# cfg_attr
+## cfg_attr
 
 También puedes configurar otro atributo basado en una variable `cfg` con
 `cfg_attr`:
@@ -83,7 +84,7 @@ También puedes configurar otro atributo basado en una variable `cfg` con
 Sera lo mismo que `#[b]` si `a` es configurado por un atributo `cfg`, y nada de
 cualquier otra manera.
 
-### cfg!
+## cfg!
 
 La [extension de sintaxis][compilerplugins] te permite también usar este tipo de
 opciones en cualquier otro punto de tu código:
@@ -99,6 +100,6 @@ if cfg!(target_os = "macos") || cfg!(target_os = "ios") {
 Estos serán reemplazado por `true` o `false` en tiempo de compilación,
 dependiendo en las opciones de la configuración.
 
-[❮ anterior](ch04-02-testing.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch04-04-documentation.md)
+[❮ 4.2. Pruebas](ch04-02-testing.md)&nbsp;|&nbsp;
+[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[4.4. Documentación ❯](ch04-04-documentation.md)

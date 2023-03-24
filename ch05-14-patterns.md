@@ -1,9 +1,10 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Patrones
+[[❮]](ch05-13-match.md)
+[[❯]](ch05-15-method-syntax.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > 5.14. Patrones
 
-## El Lenguaje de Programación Rust
-
-### 5.14. Patrones
+# 5.14. Patrones
 
 Los patrones son bastante comunes en Rust. Los usamos en
 [enlaces a variable][bindings], [sentencias match][match], y otros casos.
@@ -29,7 +30,7 @@ match x {
 
 Imprime `uno`.
 
-# Multiples patrones
+## Multiples patrones
 
 Puedes probar multiples patrones con `|`:
 
@@ -45,7 +46,7 @@ match x {
 
 Lo anterior imprime `uno o dos`.
 
-# Destructuracion
+## Destructuracion
 
 Si posees un tipo de datos compuesto, como un [`struct`][struct], puedes
 destructurarlo dentro de un patron:
@@ -120,7 +121,7 @@ compuesto, como [tuplas][tuples] o [enums][enums].
 [tuples]: primitive-types.html#tuples
 [enums]: enums.html
 
-# Ignorando enlaces a variables
+## Ignorando enlaces a variables
 
 Puedes usar `_` en un patron para ignorar tanto el tipo como el valor.
 
@@ -173,7 +174,7 @@ match x {
 
 Esto imprime `Tupla obtenida!`.
 
-# ref y ref mut
+## ref y ref mut
 
 Si deseas obtener una [referencia][ref], debes usar la palabra reservada `ref`:
 
@@ -201,7 +202,7 @@ match x {
 }
 ```
 
-# Rangos
+## Rangos
 
 Puedes probar un rango de valors con `...`:
 
@@ -231,7 +232,7 @@ match x {
 
 This prints `algo mas`.
 
-# Enlaces a variable
+## Enlaces a variable
 
 Puedes asociar valores a nombres con `@`:
 
@@ -275,7 +276,7 @@ match x {
 }
 ```
 
-# Guardias
+## Guardias
 
 Puedes introducir `guardias match` (‘match guards’) con `if`:
 
@@ -322,7 +323,7 @@ y no así:
 4 | (5 if y) => ...
 ```
 
-# Mezcla y Match
+## Mezcla y Match
 
 Uff! Eso fue un montón de formas diferentes para probar cosas, y todas pueden
 ser mezcladas y probadas, dependiendo de los que estés haciendo:
@@ -335,6 +336,6 @@ match x {
 
 Los patrones son muy poderosos. Haz buen uso de ellos.
 
-[❮ anterior](ch05-13-match.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-15-method-syntax.md)
+[❮ 5.13. Match](ch05-13-match.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.15. Sintaxis de Métodos ❯](ch05-15-method-syntax.md)

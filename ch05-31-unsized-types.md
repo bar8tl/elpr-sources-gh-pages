@@ -1,9 +1,10 @@
-[Indice general](_index.md) >
+[[❮]](ch05-30-associated-types.md)
+[[❯]](ch05-32-operators-and-overloading.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
 [Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Tipos sin Tamaño
 
-## El Lenguaje de Programación Rust
-
-### 5.31. Tipos sin Tamaño
+# 5.31. Tipos sin Tamaño
 
 La mayoría de los tipos posee un tamaño particular, en bytes, que es conocido en
 tiempo de compilación. Por ejemplo un `i32` tiene un tamaño de treinta y dos
@@ -50,7 +51,7 @@ inteligentes definidos por el usuario, pueden usar este `impl`.
 
 [ref]: references-and-borrowing.html
 
-# ?Sized
+## ?Sized
 
 Si deseas escribir una función que acepte un tipo de datos de tamaño dinámico,
 puedes usar limite de trait especial, `?Sized`:
@@ -66,6 +67,6 @@ es especial: nos permite hacer match con mas tipos, no menos. Es justo casi como
 que cualquier `T` implícitamente es `T: Sized`, y el `?` deshace este
 comportamiento por defecto.
 
-[❮ anterior](ch05-30-associated-types.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-32-operators-and-overloading.md)
+[❮ 5.30. Tipos Asociados](ch05-30-associated-types.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.32. Operadores y Sobrecarga ❯](ch05-32-operators-and-overloading.md)

@@ -1,9 +1,10 @@
-[Indice general](_index.md) > [Primeros Pasos](ch02-00-getting-started.md) >
-Instalando Rust
+[[❮]](ch02-00-getting-started.md)
+[[❯]](ch02-02-hello-world.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[2. Primeros Pasos](ch02-00-getting-started.md) > 2.1. Instalando Rust
 
-## El Lenguaje de Programación Rust
-
-### 2.1, Instalando Rust
+# 2.1. Instalando Rust
 
 ¡El primer paso para usar Rust es instalarlo! Existen un número de maneras para
 instalar Rust, pero la más fácil es usar el script `rustup`. Si estás en Linux o
@@ -103,6 +104,6 @@ apodo que usamos entre nosotros), y te ayudaremos. Otros excelentes recursos son
 [users]: http://users.rust-lang.org/
 [stackoverflow]: http://stackoverflow.com/questions/tagged/rust
 
-[❮ anterior](ch02-00-getting-started.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch02-02-hello-world.md)
+[❮ 2. Primeros Pasos](ch02-00-getting-started.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[2.2. ¡Hola, mundo! ❯](ch02-02-hello-world.md)

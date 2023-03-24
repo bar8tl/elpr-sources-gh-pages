@@ -1,9 +1,10 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Unsafe
+[[❮]](ch05-35-raw-pointers.md)
+[[❯]](ch06-00-nightly-rust.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > 5.36. Unsafe
 
-## El Lenguaje de Programación Rust
-
-### 5.36. Unsafe
+# 5.36. Unsafe
 
 La principal atracción de Rust son sus poderosas garantías estáticas acerca de
 comportamiento. Pero los chequeos de seguridad son conservadores por naturaleza:
@@ -52,7 +53,7 @@ posiblemente contener bugs que originen problemas graves. Si un programa Rust
 termina de manera abrupta (un segfault), puedes tener por seguro que es en algún
 lugar de las secciones marcadas como `unsafe`.
 
-### Que significa ‘seguro’?
+## Que significa ‘seguro’?
 
 Seguro, en el contexto de Rust, significa ‘no hacer nada inseguro’. Es
 importante saber que hay ciertos comportamientos que son probablemente
@@ -99,7 +100,7 @@ foraneo.
 [undef]: http://llvm.org/docs/LangRef.html#undefined-values
 [aliasing]: http://llvm.org/docs/LangRef.html#pointer-aliasing-rules
 
-### Superpoderes Unsafe
+## Superpoderes Unsafe
 
 En ambos funciones y bloques unsafe, Rust te permitirá hacer tres cosas que
 normalmente no podrías hacer. Solo tres. Y son:
@@ -154,6 +155,6 @@ que debes ser cuidadoso!
 
 [intrinsics]: intrinsics.html
 
-[❮ anterior](ch05-35-raw-pointers.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch06-00-nightly-rust.md)
+[❮ 5.35. Apuntadores Planos](ch05-35-raw-pointers.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[6. Rust Nocturno ❯](ch06-00-nightly-rust.md)

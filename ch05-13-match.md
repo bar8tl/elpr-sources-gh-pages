@@ -1,9 +1,10 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Match
+[[❮]](ch05-12-enums.md)
+[[❯]](ch05-14-patterns.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > 5.13. Match
 
-## El Lenguaje de Programación Rust
-
-### 5.13. Match
+# 5.13. Match
 
 A menudo, un simple [`if`][if]/`else` no es suficiente, debido a que tienes mas
 de dos opciones posibles. También, las condiciones pueden ser complejas. Rust
@@ -69,7 +70,7 @@ let number = match x {
 
 Algunas veces es una buena forma de convertir algo de un tipo a otro.
 
-### Haciendo `match` en enums
+## Haciendo `match` en enums
 
 Otro uso importante de la palabra reservada `match` es para procesar las
 posibles variantes de una enum:
@@ -106,6 +107,6 @@ ser vista como una forma abreviada de `match`.
 
 [if-let]: if-let.html
 
-[❮ anterior](ch05-12-enums.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-14-patterns.md)
+[❮ 5.12. Enumeraciones](ch05-12-enums.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.14. Patrones ❯](ch05-14-patterns.md)

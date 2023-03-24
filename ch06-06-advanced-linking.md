@@ -1,15 +1,16 @@
-[Indice general](_index.md) > [Rust Nocturno](ch06-00-nightly-rust.md) >
-Enlace Avanzado
+[[❮]](ch06-05-lang-items.md)
+[[❯]](ch06-07-benchmark-tests.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[6. Rust Nocturno](ch06-00-nightly-rust.md) > 6.6. Enlace Avanzado
 
-## El Lenguaje de Programación Rust
-
-### 6.6. Enlace Avanzado
+# 6.6. Enlace Avanzado
 
 Los casos comunes de enlace con Rust han sido cubiertos anteriormente en este
 libro, pero soportar el rango de posibilidades disponibles en lenguajes es
 importante para Rust para lograr una buena interacción con bibliotecas nativas.
 
-### Argumentos de enlace
+## Argumentos de enlace
 
 Hay otra forma de decirle a `rustc` como personalizar el enlazado, y es via el
 atributo `link_args`. Este atributo es aplicado a los bloques `extern` y
@@ -37,7 +38,7 @@ mismo efecto del atributo `link_args` con el argumento `-C link-args` de
 Es altamente recomendado *no* usar este atributo, y en su lugar usar el mas
 formal `#[link(...)]` en los bloques `extern`.
 
-### Enlazado estatico
+## Enlazado estatico
 
 El enlace estático se refiere a el proceso de crear una salida que contenga
 todas las bibliotecas requeridas y por lo tanto no requiera que las bibliotecas
@@ -52,7 +53,7 @@ El enlace es un tópico muy dependiente de plataforma, y el enlace estático pue
 no ser posible en todas las plataformas. Esta sección asume cierta familiaridad
 con el enlace en tu plataforma.
 
-#### Linux
+## Linux
 
 Por defecto, todos los programas en Linux se enlazaran con la biblioteca `libc`
 del sistema en conjunto con otro grupo de bibliotecas. Veamos un ejemplo en una
@@ -153,6 +154,6 @@ misma arquitectura y ser ejecutado sin ningún problema.
 construir tus crates normalmente. Sin embargo, podrías necesitar recompilar tus
 bibliotecas nativas con `musl` antes de poder enlazar con ellas.
 
-[❮ anterior](ch06-05-lang-items.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch06-07-benchmark-tests.md)
+[❮ 6.5. Items de Lenguaje](ch06-05-lang-items.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[6.7. Pruebas de Rendimiento ❯](ch06-07-benchmark-tests.md)

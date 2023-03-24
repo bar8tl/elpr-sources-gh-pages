@@ -1,9 +1,11 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Crates y Modulos
+[[❮]](ch05-24-ufcs.md)
+[[❯]](ch05-26-const-and-static.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) >
+5.25. Crates y Modulos
 
-## El Lenguaje de Programación Rust
-
-### 5.25 Crates y Modulos
+# 5.25 Crates y Modulos
 
 Cuando un proyecto comienza a crecer, se considera buena practica de ingeniería
 de software dividirlo en un grupo de componentes mas pequeños que posteriormente
@@ -11,7 +13,7 @@ serán unidos. También es importante tener una interfaz bien definida, de maner
 que una parte de la funcionalidad sea privada, y otra publica. Para facilitar
 esto, Rust posee un sistema de módulos.
 
-### Terminologia basica: Crates y Modulos
+## Terminologia basica: Crates y Modulos
 
 Rust posee dos términos distintos relacionados con el sistema de módulos:
 ‘crate’ y ‘modulo’. Un crate es un sinónimo para ‘biblioteca’ or ‘paquete’ en
@@ -79,7 +81,7 @@ nuestro diagrama anterior.
 
 above.
 
-### Definiendo Módulos
+## Definiendo Módulos
 
 Para definir cada uno de nuestros módulos, usamos la palabra reservada `mod`.
 Hagamos que nuestro `src/lib.rs` se vea así:
@@ -128,7 +130,7 @@ build  deps  examples  libfrases-a7448e02a0468eaa.rlib  native
 `libfrases-hash.rlib` es el crate compilado. Antes de ver como usar este crate
 desde otro, dividámoslo en multiples archivos.
 
-# Crates con multiple archivos
+## Crates con multiple archivos
 
 Si cada crate fuera un solo archivo, dichos archivos serian bastante grandes. Es
 mas fácil dividir los crates en multiples archivos. Rust soporta esto de dos
@@ -249,7 +251,7 @@ fn adios() -> String {
 Ahora que tenemos algo de funcionalidad en nuestro crate, intentemos usarlos
 desde otro.
 
-### Importing External Crates
+## Importing External Crates
 
 Ya tenemos un crate biblioteca. Creemos un crate ejecutable que importe y use
 nuestra biblioteca.
@@ -303,7 +305,7 @@ frases/src/main.rs:4:5: 4:76 note: expansion site
 
 Por defecto todo es privado en Rust. Hablemos de esto con mayor detalle.
 
-### Exportando una Interfaz Publica
+## Exportando una Interfaz Publica
 
 Rust te permite controlar de manera precisa cuales aspectos de tu interfaz son
 públicos, y private es el defacto. Para hacer a algo publico, debes hacer uso de
@@ -378,7 +380,7 @@ Rust posee otra palabra reservada para importar nombres en el ámbito actual, de
 manera que puedas hacer referencia a ellos con nombres mas cortos, Hablemos
 acerca de `use`.
 
-### Importando Modulos con `use`
+## Importando Modulos con `use`
 
 Rust posee una palabra reservada, `use`, que te permite importar nombres en tu
 ámbito local. Cambiemos nuestro `src/main.rs` para que luzca de la siguiente
@@ -458,7 +460,7 @@ Podemos usar esta version mas corta:
 use phrases::ingles::{saludos, despedidas};
 ```
 
-### Re-exportando con `pub use`
+## Re-exportando con `pub use`
 
 No solo usamos `use` para acortar identificadores. Puedes también usarlos dentro
 de tu crate para re-exportar una función dentro de otro modulo. Esto te permite
@@ -553,7 +555,7 @@ Hola in Japones: こんにちは
 Adios in Japones: さようなら
 ```
 
-### Importes complejos
+## Importes complejos
 
 Rust ofrece un numero de opciones avanzadas que pueden hacer tus sentencias
 `extern crate` mas compactas y convenientes. He aquí un ejemplo:
@@ -603,6 +605,6 @@ Como puedes ver, las llaves comprimen las sentencias `use` para varios items
 bajo la misma ruta, y en este contexto `self` hace referencia a dicha ruta.
 Nota: Las llaves no pueden ser anidadas o mezcladas con globbing de asteriscos.
 
-[❮ anterior](ch05-24-ufcs.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-26-const-and-static.md)
+[❮ 5.24. Sintaxis Universal  de Llamada a Funciones](ch05-24-ufcs.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.26. `const` y `static` ❯](ch05-26-const-and-static.md)

@@ -1,9 +1,10 @@
-[Indice general](_index.md) > [Rust Nocturno](ch06-00-nightly-rust.md) >
-Items de Lenguaje
+[[❮]](ch06-04-intrinsics.md)
+[[❯]](ch06-06-advanced-linking.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[6. Rust Nocturno](ch06-00-nightly-rust.md) > 6.5. Items de Lenguaje
 
-## El Lenguaje de Programación Rust
-
-### 6.5. Items de Lenguaje
+# 6.5. Items de Lenguaje
 
 > **Nota**: los items de lenguaje son normalmente proporcionados por crates en
 > la distribución Rust, dichos items en si mismos poseen una interfaz inestable.
@@ -88,6 +89,6 @@ alguien no necesita `Box` entonces no hay necesidad de definir funciones para
 lenguaje sea necesario pero no este presente en el crate actual o alguno en el
 cual este dependa.
 
-[❮ anterior](ch06-04-intrinsics.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch06-06-advanced-linking.md)
+[❮ 6.4. Intrínsecos](ch06-04-intrinsics.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[6.6. Enlace Avanzado ❯](ch06-06-advanced-linking.md)

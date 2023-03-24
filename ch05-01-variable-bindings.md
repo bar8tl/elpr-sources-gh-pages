@@ -1,9 +1,11 @@
-[Indice general](_index.md) >
-[Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) > Enlaces a Variable
+[[❮]](ch05-00-syntax-and-semantics.md)
+[[❯]](ch05-02-functions.md)
+&nbsp;&nbsp;
+[El Lenguaje de Programación Rust](_index.md) >
+[5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md) >
+5.1. Enlaces a Variable
 
-## El Lenguaje de Programación Rust
-
-### 5.1. Enlaces a Variable
+# 5.1. Enlaces a Variable
 
 Virtualmente cualquier programa no-'Hola Mundo’ usa *enlaces a variables*.
 Dichos enlaces a variables lucen así:
@@ -180,6 +182,6 @@ complicados de imprimir.
 
 [format]: ../std/fmt/index.html
 
-[❮ anterior](ch05-00-syntax-and-semantics.md)&nbsp;|&nbsp;
-[Indice general](_index.md)&nbsp;|&nbsp;
-[siguiente ❯](ch05-02-functions.md)
+[❮ 5. Sintaxis y Semantica](ch05-00-syntax-and-semantics.md)
+&nbsp;|&nbsp;[Tabla de contenido](_index.md)&nbsp;|&nbsp;
+[5.2. Funciones ❯](ch05-02-functions.md)
